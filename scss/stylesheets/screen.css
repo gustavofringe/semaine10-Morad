@@ -13,56 +13,59 @@ import font-face
   font-family: "novecento";
   src: url("../../_fonts/Novecentosanswide-Book.otf");
 }
-/* line 21, ../sass/screen.scss */
+/*==============================================================================
+footer
+================================================================================*/
+/* line 24, ../sass/screen.scss */
 #footer {
   background-color: #1D1D1E;
   color: #ffffff;
   padding-top: 85px;
 }
-/* line 25, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 #footer h2, #footer p, #footer a {
   text-transform: uppercase;
 }
-/* line 28, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 #footer .clock, #footer .marker {
   width: 20px;
   height: 20px;
 }
-/* line 32, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 #footer .home {
   height: 30px;
 }
-/* line 35, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 #footer .center {
   width: 230px;
   margin: 20px auto !important;
 }
-/* line 39, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 #footer .center-m {
   width: 260px;
   margin: 0 auto !important;
 }
-/* line 43, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 #footer .contact {
   width: 150px;
 }
-/* line 46, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 #footer h2 {
   font-family: "lovelo";
   font-size: 15px;
 }
-/* line 50, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 #footer p {
   font-family: 'novecento';
   font-size: 13px;
   line-height: 1.6em;
   margin: 0;
 }
-/* line 55, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 #footer p span {
   font-weight: bold;
 }
-/* line 59, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 #footer a, #footer svg {
   cursor: default;
   margin-right: 5px;
@@ -78,7 +81,7 @@ import font-face
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 72, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 #footer a:hover, #footer svg:hover {
   fill: #D8383F;
   color: #D8383F;
