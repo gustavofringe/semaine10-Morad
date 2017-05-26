@@ -62,13 +62,15 @@ footer
       font-weight: bold;
     }
   }
-  a, svg{
-    cursor: default;
+  svg{
+
+    height: 30px;
+    width: 30px;
+  }
+  a{
     margin-right:5px;
     font-family:"novecento";
     font-size: 13px;
-    height: 30px;
-    width: 30px;
     fill: white;
     color: white;
 
@@ -76,8 +78,8 @@ footer
     @include transition-duration(0.3s);
 
     &:hover{
-      fill: $a-hover-footer;
       color: $a-hover-footer;
+      fill: $a-hover-footer;
     }
   }
 }

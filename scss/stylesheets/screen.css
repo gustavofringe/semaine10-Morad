@@ -69,13 +69,15 @@ footer
   font-weight: bold;
 }
 /* line 65, ../sass/screen.scss */
-#footer a, #footer svg {
-  cursor: default;
+#footer svg {
+  height: 30px;
+  width: 30px;
+}
+/* line 70, ../sass/screen.scss */
+#footer a {
   margin-right: 5px;
   font-family: "novecento";
   font-size: 13px;
-  height: 30px;
-  width: 30px;
   fill: white;
   color: white;
   text-decoration: none;
@@ -84,10 +86,10 @@ footer
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 78, ../sass/screen.scss */
-#footer a:hover, #footer svg:hover {
-  fill: #D8383F;
+/* line 80, ../sass/screen.scss */
+#footer a:hover {
   color: #D8383F;
+  fill: #D8383F;
 }
 
 /*======================================================================================
@@ -100,6 +102,18 @@ desktop format
   /*===================================================================================
 footer
 ======================================================================================*/
+  /* line 8, ../sass/_desktop.scss */
+  #footer {
+    /*.nevenceto{
+      font-family:"lovelo";
+      color: white;
+      fill: white;
+      &:hover{
+        color: #2aabd2;
+        fill: red;
+      }
+    }*/
+  }
   /* line 9, ../sass/_desktop.scss */
   #footer h2 {
     font-size: 30px;
@@ -117,39 +131,14 @@ footer
     margin-top: 10px;
   }
   /* line 21, ../sass/_desktop.scss */
-  #footer a, #footer svg {
-    cursor: default;
-    margin-right: 5px;
-    font-family: "novecento";
-    font-size: 13px;
-    height: 30px;
-    width: 30px;
-    fill: white;
-    color: white;
-    text-decoration: none;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-  }
-  /* line 32, ../sass/_desktop.scss */
-  #footer a:hover, #footer svg:hover {
-    fill: #D8383F;
-    color: #D8383F;
-  }
-  /* line 37, ../sass/_desktop.scss */
   #footer .border {
     border-top: 2px solid white;
   }
-  /* line 40, ../sass/_desktop.scss */
-  #footer .nevenceto {
-    font-family: "lovelo";
-  }
-  /* line 43, ../sass/_desktop.scss */
+  /* line 33, ../sass/_desktop.scss */
   #footer .left {
     text-align: right;
   }
-  /* line 46, ../sass/_desktop.scss */
+  /* line 36, ../sass/_desktop.scss */
   #footer .mecene {
     font-size: 10px;
     color: #4E5257;

@@ -18,28 +18,18 @@ footer
     .mt_3{
       margin-top:10px;
     }
-    a, svg{
-      cursor: default;
-      margin-right:5px;
-      font-family:"novecento";
-      font-size: 13px;
-      height: 30px;
-      width: 30px;
-      fill: white;
-      color: white;
-      text-decoration: none;
-      @include transition-duration(0.3s);
-      &:hover{
-        fill: $a-hover-footer;
-        color: $a-hover-footer;
-      }
-    }
     .border{
       border-top:2px solid white;
     }
-    .nevenceto{
+    /*.nevenceto{
       font-family:"lovelo";
-    }
+      color: white;
+      fill: white;
+      &:hover{
+        color: #2aabd2;
+        fill: red;
+      }
+    }*/
     .left{
       text-align: right;
     }
