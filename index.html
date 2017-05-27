@@ -1,56 +1,90 @@
 <!doctype html>
-<html  lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/pba.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://use.fontawesome.com/1d29cca193.js"></script>
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
     <body>
-      <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
-        <div class="container justify-content-between">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleContainer" aria-controls="navbarsExampleContainer" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a id="title" class=" navbar-brand" href="#">palais beaux-art</a>
+      <!-- START OF HEADER   -->
+      <header class="entete w-100">
 
-          <div class="collapse navbar-collapse" id="navbarsExampleContainer">
-            <ul class="  navbar-nav mr-auto ">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">VISITER </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">AGENDA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">INFOS</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-md-0">
+        <figure class="no-mobile titre1">
+                <img src="img/titre.png" alt="titre">
+        </figure>
 
-              <input class=" cherche form-control mr-sm-2"  placeholder="" type="search" name="search">
 
-            </form>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Francais</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown02">
-                <a class="dropdown-item" href="#">English</a>
-                <a class="dropdown-item" href="#">Arabic</a>
-                <a class="dropdown-item" href="#">Dutsch</a>
-              </div>
-            </li>
+        <!--  nav non mobile -->
+        <ul class="no-mobile menu">
+          <li><a href="index.html">COLLECTIONS</a></li>
+          <li><a href="visiter.html">VISITER</a></li>
+          <li><a href="#">AGENDA</a></li>
+          <li><a href="#">INFOS</a></li>
+        </ul>
+
+        <form class="no-mobile form">
+          <div class="search">
+            <input type="search" name="" value="">
+             <span class="icon flaticon-uniE92A"></span>
           </div>
-          <img alt="Ville de Lille" src="img/logo-lille.svg">
+        </form>
+        <div class="langueselect no-mobile">
+          <ul>
+            <li>
+              <i class="fa fa-angle-down" style="font-size:24px"></i><a href="#">français
+
+              </a>
+            </li>
+           </ul>
         </div>
-      </nav>
+        <!--  nav of mobile and tablette  -->
+        <div class="nav-mobile-right">
+          <div class="search">
+            <a href="#"> <i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
+
+          </div>
+          <div class="info">
+            <a href="#"><i class="fa fa-info-circle fa-2x " aria-hidden="true "></i></a>
+
+
+
+
+
+          </div>
+
+
+          <div class="button-burger">
+              <button onclick="myFunction()"  class="dropbtn"> <i class="fa fa-bars fa-x " aria-hidden="true "></i></button>
+              <div id="monmenu" class="menu-cache">
+                     <a href="#"><span class="icon flaticon-uniE905"></span> Collections</a>
+                     <a href="visiter.html"><span class="icon flaticon-uniE922"></span> Visiter</a>
+                     <a href="#"><span class="icon flaticon-uniE92B"></span> Agenda</a>
+                     <a href="#"><span class="icon flaticon-uniE92B"></span>contactez-nous</a>
+
+                </div>
+
+           </div>
+          </div>
+
+          <aside class="logo-palais">
+
+          </aside>
+
+
+
+      </header>
+      <!-- END OF HEADER -->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
