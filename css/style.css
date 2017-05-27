@@ -1,7 +1,29 @@
+@font-face {
+  font-family: Myfont;
+  src: url(../Lovelo_Black_1_.ttf);
+}
+@font-face {
+  font-family: baron_neuenormal_50;
+  src: url(../pba.ttf);
+}
+*{
+  font-family: 'Myfont'
+}
+#title {
+  font-size: 100%;
+  font-family: "baron_neuenormal_50";
+  font-style: normal;;
+  font-weight: normal;
+}
 img{
   width: 56px;
 vertical-align: middle;
 padding: 1px;
 margin-top: 8px;
 height: 73px;
+}
+.cherche{
+  background: black;
+  border: 4px solid white;
+  border-radius: 0px;
 }
