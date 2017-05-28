@@ -437,6 +437,93 @@ textarea {
        /*==================*/
        /*END OF SECTION EVENEMENT*/
        /*==================*/
+       /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+       /*==================*/
+       /*SECTION OEUVRE*/
+       /*==================*/
+       #titregalerie
+       {
+         text-align: center;
+         color: #FFF;
+         background-color: #1D1D1E;
+       }
+
+       #titregalerie h3
+       {
+         font-family: "lovelo";
+         font-size: 17px;
+         padding-top: 22px;
+       }
+
+       #titregalerie p
+       {
+         font-family: "biko";
+         font-size: 10px;
+         margin-top: -10px;
+         margin-bottom: -5px;
+       }
+
+       #titregalerie i
+       {
+         font-size: 10px;
+         margin-right: 20px;
+         color: inherit;
+       }
+
+       #oeuvreclé div
+       {
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         height: 430px;
+         display: flex;
+       }
+
+       #oeuvreclé div:nth-child(1)
+       {
+         background-image: url(../img/1eOeuvre.jpg);
+       }
+
+       #oeuvreclé div:nth-child(2)
+       {
+         background-image: url(../img/2eOeuvre.jpg);
+       }
+
+       #oeuvreclé div:nth-child(3)
+       {
+         background-image: url(../img/3eOeuvre.jpg);
+       }
+
+       #oeuvreclé div:nth-child(4)
+       {
+         background-image: url(../img/4eOeuvre.jpg);
+       }
+
+       #oeuvreclé .whiteArt
+       {
+         align-content: flex-end;
+         width: 250px;
+         height: 170px;
+         background-color: #FFF;
+         margin: auto;
+         padding: 23.5px 20px 0px 23.5px;
+         color: black;
+       }
+
+       #oeuvreclé .whiteArt h3
+       {
+         font-family: "lovelo";
+         font-size: 20px;
+       }
+
+       #oeuvreclé .whiteArt p
+       {
+         font-family: "biko";
+         font-size: 13px;
+       }
+
+
 
    /*========MEDIA QUERIES DESKTOP LARGE========*/
    /*============================================*/
