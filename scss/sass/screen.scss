@@ -1,0 +1,87 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+/*=====================================================================
+import font-face
+=====================================================================*/
+@font-face {
+  font-family: "lovelo";
+  src: url('../../_fonts/Lovelo_Black.otf');
+}
+@font-face {
+  font-family: "novecento";
+  src: url("../../_fonts/Novecentosanswide-Book.otf");
+}
+$a-hover-footer: #D8383F;
+$footer: #1D1D1E;
+$a-footer:#ffffff;
+/*==============================================================================
+footer
+================================================================================*/
+#footer{
+  background-color: $footer;
+  color: $a-footer;
+  padding-top:85px;
+  h2, p, a{
+    text-transform: uppercase;
+  }
+  /*=======================================
+  width of svg clock and marker
+  =========================================*/
+  .clock, .marker{
+    width: 20px;
+    height: 20px;
+  }
+  .home{
+    height: 30px;
+  }
+  .center{
+    width: 230px;
+    margin: 20px auto !important;
+  }
+  .center-m{
+    width: 260px;
+    margin: 0 auto !important;
+  }
+  .contact{
+    width: 150px;
+  }
+  h2{
+    font-family:"lovelo";
+    font-size: 15px;
+  }
+  p{
+    font-family:'novecento';
+    font-size: 13px;
+    line-height:1.6em;
+    margin: 0;
+    span{
+      font-weight: bold;
+    }
+  }
+  svg{
+
+    height: 30px;
+    width: 30px;
+  }
+  a{
+    margin-right:5px;
+    font-family:"novecento";
+    font-size: 13px;
+    fill: white;
+    color: white;
+
+    text-decoration: none;
+    @include transition-duration(0.3s);
+
+    &:hover{
+      color: $a-hover-footer;
+      fill: $a-hover-footer;
+    }
+  }
+}
+@import "tablet";
+@import "desktop";

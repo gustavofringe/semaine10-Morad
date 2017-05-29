@@ -1,0 +1,41 @@
+/*================================================================================================
+desktop format
+===================================================================================================*/
+@media only screen and (min-width: 1200px){
+  /*===================================================================================
+footer
+======================================================================================*/
+  #footer{
+    h2{
+      font-size: 30px;
+    }
+    img{
+      height: 50px;
+    }
+    .musee{
+      height: 60px;
+    }
+    .mt_3{
+      margin-top:10px;
+    }
+    .border{
+      border-top:2px solid white;
+    }
+    /*.nevenceto{
+      font-family:"lovelo";
+      color: white;
+      fill: white;
+      &:hover{
+        color: #2aabd2;
+        fill: red;
+      }
+    }*/
+    .left{
+      text-align: right;
+    }
+    .mecene{
+      font-size: 10px;
+      color: #4E5257;
+    }
+  }
+}
