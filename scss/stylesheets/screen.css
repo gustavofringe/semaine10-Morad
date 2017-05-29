@@ -13,10 +13,23 @@ import font-face
   font-family: "novecento";
   src: url("../../_fonts/Novecentosanswide-Book.otf");
 }
+/*=============================================================================
+agenda
+=================================================================================*/
+/* line 30, ../sass/screen.scss */
+#agenda {
+  padding-top: 100px;
+}
+/* line 32, ../sass/screen.scss */
+#agenda .calendar {
+  width: 50px;
+  height: 50px;
+}
+
 /*==============================================================================
 footer
 ================================================================================*/
-/* line 24, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 #footer {
   background-color: #1D1D1E;
   color: #ffffff;
@@ -25,55 +38,58 @@ footer
   width of svg clock and marker
   =========================================*/
 }
-/* line 28, ../sass/screen.scss */
-#footer h2, #footer p, #footer a {
+/* line 47, ../sass/screen.scss */
+#footer h2,
+#footer p,
+#footer a {
   text-transform: uppercase;
 }
-/* line 34, ../sass/screen.scss */
-#footer .clock, #footer .marker {
+/* line 55, ../sass/screen.scss */
+#footer .clock,
+#footer .marker {
   width: 20px;
   height: 20px;
 }
-/* line 38, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 #footer .home {
   height: 30px;
 }
-/* line 41, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 #footer .center {
   width: 230px;
   margin: 20px auto !important;
 }
-/* line 45, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 #footer .center-m {
   width: 260px;
   margin: 0 auto !important;
 }
-/* line 49, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 #footer .contact {
   width: 150px;
 }
-/* line 52, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 #footer h2 {
   font-family: "lovelo";
   font-size: 15px;
 }
-/* line 56, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 #footer p {
   font-family: 'novecento';
   font-size: 13px;
   line-height: 1.6em;
   margin: 0;
 }
-/* line 61, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 #footer p span {
   font-weight: bold;
 }
-/* line 65, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #footer svg {
   height: 30px;
   width: 30px;
 }
-/* line 70, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 #footer a {
   margin-right: 5px;
   font-family: "novecento";
@@ -86,7 +102,7 @@ footer
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 80, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 #footer a:hover {
   color: #D8383F;
   fill: #D8383F;
