@@ -15,151 +15,252 @@
 </head>
 
 <body>
-    <!-- START OF HEADER   -->
-    <header class="entete w-100">
+<!-- START OF HEADER   -->
+<header class="entete w-100">
 
-        <figure class="no-mobile titre1">
-            <img src="../img/titre.png" alt="titre">
-        </figure>
+    <figure class="no-mobile titre1">
+        <img src="../img/titre.png" alt="titre">
+    </figure>
 
 
-        <!--  nav non mobile -->
-        <ul class="no-mobile menu">
-            <li><a href="index.html">COLLECTIONS</a></li>
-            <li><a href="visiter.html">VISITER</a></li>
-            <li><a href="#">AGENDA</a></li>
-            <li><a href="#">INFOS</a></li>
+    <!--  nav non mobile -->
+    <ul class="no-mobile menu">
+        <li><a href="index.html">COLLECTIONS</a></li>
+        <li><a href="visiter.html">VISITER</a></li>
+        <li><a href="#">AGENDA</a></li>
+        <li><a href="#">INFOS</a></li>
+    </ul>
+
+    <form class="no-mobile form">
+        <div class="search">
+            <input type="search" name="" value="">
+            <!-- <span class="icon flaticon-uniE92A"></span> -->
+        </div>
+    </form>
+    <div class="langueselect no-mobile">
+        <ul>
+            <li>
+                <i class="fa fa-angle-down" style="font-size:24px"></i><a href="#">français
+
+            </a>
+            </li>
         </ul>
+    </div>
+    <!--  nav of mobile and tablette  -->
+    <div class="nav-mobile-right">
+        <div class="search">
+            <a href="#"> <i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
 
-        <form class="no-mobile form">
-            <div class="search">
-                <input type="search" name="" value="">
-                <!-- <span class="icon flaticon-uniE92A"></span> -->
-            </div>
-        </form>
-        <div class="langueselect no-mobile">
-            <ul>
-                <li>
-                    <i class="fa fa-angle-down" style="font-size:24px"></i><a href="#">français
-
-              </a>
-                </li>
-            </ul>
         </div>
-        <!--  nav of mobile and tablette  -->
-        <div class="nav-mobile-right">
-            <div class="search">
-                <a href="#"> <i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
-
-            </div>
-            <div class="info">
-                <a href="#"><i class="fa fa-info-circle fa-2x " aria-hidden="true "></i></a>
+        <div class="info">
+            <a href="#"><i class="fa fa-info-circle fa-2x " aria-hidden="true "></i></a>
 
 
-
-
-
-            </div>
-
-
-            <div class="button-burger">
-                <button onclick="myFunction()" class="dropbtn"> <i class="fa fa-bars fa-x " aria-hidden="true "></i></button>
-                <div id="monmenu" class="menu-cache">
-                    <a href="#"><span class="icon flaticon-uniE905"></span> Collections</a>
-                    <a href="visiter.html"><span class="icon flaticon-uniE922"></span> Visiter</a>
-                    <a href="#"><span class="icon flaticon-uniE92B"></span> Agenda</a>
-                    <a href="#"><span class="icon flaticon-uniE92B"></span>contactez-nous</a>
-
-                </div>
-
-            </div>
         </div>
 
-        <aside class="logo-palais">
 
-        </aside>
+        <div class="button-burger">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-x " aria-hidden="true "></i></button>
+            <div id="monmenu" class="menu-cache">
+                <a href="#"><span class="icon flaticon-uniE905"></span> Collections</a>
+                <a href="visiter.html"><span class="icon flaticon-uniE922"></span> Visiter</a>
+                <a href="#"><span class="icon flaticon-uniE92B"></span> Agenda</a>
+                <a href="#"><span class="icon flaticon-uniE92B"></span>contactez-nous</a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <aside class="logo-palais">
+
+    </aside>
 
 
+</header>
+<main id="agenda">
+    <div class="container">
+        <div class="d-block mt-5 pt-5">
 
-    </header>
-    <main id="agenda">
-        <div class="container">
-            <div class="d-block">
+            <img class="calendar d-flex justify-content-center" src="../img/agenda/calendar.svg"
+                 alt="agenda">
+            <h1 class="mt-3">agenda du musée</h1>
+            <img class="point d-flex justify-content-center" src="../img/agenda/dessin-1.svg" alt="">
 
-                    <img class="calendar" src="../img/agenda/calendar.svg"
-                                           alt="agenda">
-                    <h1>agenda du musée</h1>
-                   <img class="point" src="../img/agenda/dessin-1.svg" alt="">
+            <p class="text-uppercase border">toutes les actualités
+                <svg
+                        xmlns:svg="http://www.w3.org/2000/svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="75mm"
+                        height="67mm"
+                        viewBox="0 0 75 67"
+                        version="1.1">
+                    <g transform="translate(0,-230)">
+                        <path d="M 58.669,252.50508 38.079133,272.53634 18.047872,251.94648"/>
+                    </g>
+                </svg>
+            </p>
 
-                <p class="text-uppercase border">toutes les actualités
-                    <svg
-                            xmlns:svg="http://www.w3.org/2000/svg"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="75mm"
-                            height="67mm"
-                            viewBox="0 0 75 67"
-                            version="1.1">
-                        <g transform="translate(0,-230)">
-                            <path d="M 58.669,252.50508 38.079133,272.53634 18.047872,251.94648"/>
-                        </g>
-                    </svg>
+        </div>
+        <div class="row mb-5 mt-5">
+            <div class="col-lg-2 col-md-12 visu">
+                <img src="../img/agenda/agenda1.jpg" alt="vieux monsieur">
+            </div>
+            <div class="col-lg-10 col-md-12 top">
+                <img class="angle" src="../img/agenda/dessin-2.svg" alt="angle">
+                <p class="text-uppercase lovelo">jusqu'au 16 juillet - <span class="text-uppercase red">évènement</span>
                 </p>
-
-            </div>
-            <div class="row">
-                <div class="col-lg-2 col-md-12 visu">
+                <p class="text-uppercase nocevento">open museum alain passard</p>
+                <p class="lovelo-s">Tarifs habituels d'entrée au musée: 7€ / 4€</p>
+                <div class="bordered"><a href="#" class="lovelo">en savoir <img class="plus"
+                                                                                src="../img/agenda/dessin-3.svg"
+                                                                                alt="plus"></a></div>
+                <div class="hidden-lg-down"><p class="nocevento">Après le groupe Air, Donald et le collectif
+                    InterDuck, et Zep, carte blanche est donnée cette année au chef trois étoiles Alain Passard. Un
+                    Open Museum placé sous le signe du plaisir des sens et du dialogue art ancien - art
+                    contemporain.</p>
+                    <p class="lovelo">)À voir à tous les niveaux du musée, au sein des collections permanentes!</p>
                 </div>
-                <div class="col-lg-10 col-md-12 top">
-                </div>
             </div>
-
         </div>
-    </main>
+        <div class="row mb-5">
+            <div class="col-lg-2 col-md-12 visu">
+                <img src="../img/agenda/agenda2.jpg" alt="peinture">
+            </div>
+            <div class="col-lg-10 col-md-12 top">
+                <img class="angle" src="../img/agenda/dessin-2.svg" alt="angle">
+                <p class="text-uppercase lovelo">le 31 mai 2017 - <span class="text-uppercase red">visite</span></p>
+                <p class="text-uppercase nocevento">visite presto</p>
+                <p class="lovelo-s">à 12 h 30. 1€ + droit d'entrée. Durée 30 mn</p>
+                <div class="hidden-lg-down"><p class="nocevento">Un tête à tête avec une œuvre différente chaque
+                    semaine.</p>
+                    <p class="lovelo">Emile Bernard, Après le bain, les nymphes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-2 col-md-12 visu">
+                <img src="../img/agenda/agenda3.jpg" alt="rousse">
+            </div>
+            <div class="col-lg-10 col-md-12 top">
+                <img class="angle" src="../img/agenda/dessin-2.svg" alt="angle">
+                <p class="text-uppercase lovelo">le 1 juin 2017 - <span class="text-uppercase red">visite</span></p>
+                <p class="text-uppercase nocevento">leçon d'art</p>
+                <p class="lovelo-s">à 14 h 30. 4€ + droit d'entrée. durée : 1h</p>
+                <div class="hidden-lg-down"><p class="nocevento">S’initier à l’histoire de l’art, apprendre à repérer et
+                    à comprendre les styles et les principaux courants. </p>
+                    <p class="lovelo">Les artistes lillois.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-2 col-md-12 visu">
+                <img src="../img/agenda/agenda4.jpg" alt="crabe">
+            </div>
+            <div class="col-lg-10 col-md-12 top">
+                <img class="angle" src="../img/agenda/dessin-2.svg" alt="angle">
+                <p class="text-uppercase lovelo">le 4 juin 2017 - <span class="text-uppercase red">évènement</span></p>
+                <p class="text-uppercase nocevento">dimanche gratuit</p>
+                <p class="lovelo-s">Entrée gratuite pour tous</p>
+                <div class="hidden-lg-down">
+                    <p class="nocevento">Le 1er dimanche du mois, l'entrée au musée est gratuite pour tous! L'occasion
+                        de découvrir les chefs-d'oeuvre qui font la renommée du Palais des Beaux-Arts, l'<span
+                                class="lovelo">Open Museum Alain Passard</span>, ou simplement de passer voir le nouvel
+                        atrium ! </p>
 
-    <footer id="footer">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-2 col-md-12 visu">
+                <img src="../img/agenda/agenda5.jpg" alt="cuisinier">
+            </div>
+            <div class="col-lg-10 col-md-12 top">
+                <img class="angle" src="../img/agenda/dessin-2.svg" alt="angle">
+                <p class="text-uppercase lovelo">le 7 juin 2017 - <span class="text-uppercase red">évènement</span></p>
+                <p class="text-uppercase nocevento">rencontre avec alex croquet</p>
+                <p class="lovelo-s">À 18 h 30. Tarifs 5,50 € / 3 € / 1 €. Durée 1 h 30 env.</p>
+                <div class="hidden-lg-down"><p class="nocevento">Venez partager l'univers et la passion du célèbre boulanger lillois Alex Croquet. Considérant le pain comme une réelle matière vivante, ce magicien du levain vous propose un moment d’échange autour d’une dégustation.</p>
+                    <p class="lovelo">Inclus: visite libre de l'Open Museum Alain Passard jusqu’à 18 h 15.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-2 col-md-12 visu">
+                <img src="../img/agenda/agenda6.jpg" alt="monsieur">
+            </div>
+            <div class="col-lg-10 col-md-12 top">
+                <img class="angle" src="../img/agenda/dessin-2.svg" alt="angle">
+                <p class="text-uppercase lovelo">Le 9 juin 2017 - <span class="text-uppercase red">visite</span></p>
+                <p class="text-uppercase nocevento">UN MIDI, UN REGARD</p>
+                <p class="lovelo-s">À 12 h 30. 4 € + droit d’entrée. Durée 1 h env.</p>
+                <div class="hidden-lg-down"><p class="nocevento">Un vendredi par mois, une personnalité inattendue nous livre son regard personnel sur les collections du musée.
+                    Ce mois-ci: <span class="lovelo">Rémi De Vos</span>, auteur et dramaturge, met en scène ses œuvres coup de cœur.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-2 col-md-12 visu">
+                <img src="../img/agenda/agenda7.jpg" alt="parfum">
+            </div>
+            <div class="col-lg-10 col-md-12 top">
+                <img class="angle" src="../img/agenda/dessin-2.svg" alt="angle">
+                <p class="text-uppercase lovelo">Le 18 juin 2017 - <span class="text-uppercase red">visite</span></p>
+                <p class="text-uppercase nocevento">Visite olfactive</p>
+                <p class="lovelo-s">À 11 h. 4 € + droit d’entrée. Durée 1 h 30 env.</p>
+                <div class="hidden-lg-down"><p class="nocevento">Une visite assurée en duo par un guide du musée et Caroline Caron, parfumeuse. Un voyage pour les sens !</p>
+                    <p class="lovelo">Nombre de places limité. Sur réservation : jbarthelemy@mairie-lille.fr</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer id="footer">
+    <!--
+
+========================================================= footer mobile
+
+
+-->
+    <div class="container hidden-xl-up">
+        <div class="d-flex justify-content-center">
+            <div class="d-block">
+                <div class="d-inline center">
+                    <img src="../img/footer/clock.svg" alt="horloge" class="clock">
+                    <h2 class="d-inline pl-4">horaires</h2>
+                </div>
+                <p>OUVERT : LUN. 14H - 18H,</p>
+                <p>MER. > DIM. 10H - 18H. fermé le mardi.</p>
+                <p>TARIF PLEIN
+                    <SPAN>7 € </SPAN>/TARIF réduit <span>4 €</span></p>
+            </div>
+        </div>
+        <div class="media center">
+            <img class="d-flex align-self-center mr-4 marker" src="../img/footer/location-pin.svg" alt="marqueur">
+            <div class="media-body">
+
+                <p class="mb-0">Place de la République 59000 Lille</p>
+            </div>
+        </div>
+        <div class="media center-m">
+            <img class="d-flex align-self-center mr-2 home" src="../img/footer/home3.svg" alt="musée">
+            <div class="media-body">
+
+                <a href="">
+                    <p class="mb-0">musée privée</p>
+                </a>
+            </div>
+        </div>
         <!--
 
-    ========================================================= footer mobile
-
+    =========================================================================== presse
 
     -->
-        <div class="container hidden-xl-up">
-            <div class="d-flex justify-content-center">
-                <div class="d-block">
-                    <div class="d-inline center">
-                        <img src="../img/footer/clock.svg" alt="horloge" class="clock">
-                        <h2 class="d-inline pl-4">horaires</h2>
-                    </div>
-                    <p>OUVERT : LUN. 14H - 18H,</p>
-                    <p>MER. > DIM. 10H - 18H. fermé le mardi.</p>
-                    <p>TARIF PLEIN
-                        <SPAN>7 € </SPAN>/TARIF réduit <span>4 €</span></p>
-                </div>
-            </div>
-            <div class="media center">
-                <img class="d-flex align-self-center mr-4 marker" src="../img/footer/location-pin.svg" alt="marqueur">
-                <div class="media-body">
-
-                    <p class="mb-0">Place de la République 59000 Lille</p>
-                </div>
-            </div>
-            <div class="media center-m">
-                <img class="d-flex align-self-center mr-2 home" src="../img/footer/home3.svg" alt="musée">
-                <div class="media-body">
-
-                    <a href="">
-                        <p class="mb-0">musée privée</p>
-                    </a>
-                </div>
-            </div>
-            <!--
-
-        =========================================================================== presse
-
-        -->
-            <div class="media center">
-                <a href="#" class="mr-2">
-                    <svg class="d-flex align-self-center mr-4 marker" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <div class="media center">
+            <a href="#" class="mr-2">
+                <svg class="d-flex align-self-center mr-4 marker" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
                         xml:space="preserve">
                         <g>
@@ -170,70 +271,71 @@
                         </g>
 
                     </svg>
-                </a>
-                <a href="#">
-                    <div class="media-body">
+            </a>
+            <a href="#">
+                <div class="media-body">
 
-                        <p class="mb-0 ml-1">presse</p>
-                    </div>
-                </a>
-            </div>
-            <!--
+                    <p class="mb-0 ml-1">presse</p>
+                </div>
+            </a>
+        </div>
+        <!--
 
-        ================================================================================ contact
+    ================================================================================ contact
 
-        -->
-            <div class="media center">
-                <a href="#">
-                    <svg class="d-flex align-self-center mr-4 marker" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        enable-background="new 0 0 44 44">
+    -->
+        <div class="media center">
+            <a href="#">
+                <svg class="d-flex align-self-center mr-4 marker" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     enable-background="new 0 0 44 44">
+                    <g>
                         <g>
                             <g>
-                                <g>
-                                    <path d="M43,6H1C0.447,6,0,6.447,0,7v30c0,0.553,0.447,1,1,1h42c0.552,0,1-0.447,1-1V7C44,6.447,43.552,6,43,6z M42,33.581     L29.612,21.194l-1.414,1.414L41.59,36H2.41l13.392-13.392l-1.414-1.414L2,33.581V8h40V33.581z"
-                                    />
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <path d="M39.979,8L22,25.979L4.021,8H2v0.807L21.293,28.1c0.391,0.391,1.023,0.391,1.414,0L42,8.807V8H39.979z" />
-                                </g>
+                                <path d="M43,6H1C0.447,6,0,6.447,0,7v30c0,0.553,0.447,1,1,1h42c0.552,0,1-0.447,1-1V7C44,6.447,43.552,6,43,6z M42,33.581     L29.612,21.194l-1.414,1.414L41.59,36H2.41l13.392-13.392l-1.414-1.414L2,33.581V8h40V33.581z"
+                                />
                             </g>
                         </g>
-                    </svg>
-                </a>
-                <a href="#">
-                    <div class="media-body">
+                        <g>
+                            <g>
+                                <path d="M39.979,8L22,25.979L4.021,8H2v0.807L21.293,28.1c0.391,0.391,1.023,0.391,1.414,0L42,8.807V8H39.979z"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a href="#">
+                <div class="media-body">
 
-                        <p class="mb-0 ml-2 contact">nous contacter</p>
-                    </div>
-                </a>
-            </div>
+                    <p class="mb-0 ml-2 contact">nous contacter</p>
+                </div>
+            </a>
+        </div>
+        <!--
+
+    =========================================================================== links
+
+    -->
+        <div class="center">
+            <a href="#" class="d-block contact pl-3">mentions legales</a>
+            <a href="#" class="d-block contact pl-3">liens</a>
+            <a href="#" class="d-block contact pl-3">plan de site</a>
+        </div>
+
+        <div class="d-flex justify-content-between">
+
+
             <!--
 
-        =========================================================================== links
+      =========================================================svg réseaux sociaux
 
-        -->
-            <div class="center">
-                <a href="#" class="d-block contact pl-3">mentions legales</a>
-                <a href="#" class="d-block contact pl-3">liens</a>
-                <a href="#" class="d-block contact pl-3">plan de site</a>
-            </div>
+     -->
+            <!--
 
-            <div class="d-flex justify-content-between">
-
-
-                <!--
-
-          =========================================================svg réseaux sociaux
-
-         -->
-                <!--
-
-        ===============================================svg twitter
-        -->
-                <a href="#" class="d-inline">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px"
+    ===============================================svg twitter
+    -->
+            <a href="#" class="d-inline">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px"
                         height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                         <g>
                             <g>
@@ -251,15 +353,15 @@
                             </g>
                         </g>
                     </svg>
-                </a>
-                <!--
+            </a>
+            <!--
 
 
-        ========================================================================svg facebook
+    ========================================================================svg facebook
 
-        -->
-                <a href="#" class="d-inline">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px"
+    -->
+            <a href="#" class="d-inline">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px"
                         height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                         <g>
                             <g>
@@ -273,14 +375,14 @@
                         </g>
 
                     </svg>
-                </a>
-                <!--
+            </a>
+            <!--
 
-        ============================================================== svg instagram
+    ============================================================== svg instagram
 
-        -->
-                <a href="#" class="d-inline">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.395px"
+    -->
+            <a href="#" class="d-inline">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.395px"
                         height="97.395px" viewBox="0 0 97.395 97.395" style="enable-background:new 0 0 97.395 97.395;" xml:space="preserve">
                         <g>
                             <path d="M12.501,0h72.393c6.875,0,12.5,5.09,12.5,12.5v72.395c0,7.41-5.625,12.5-12.5,12.5H12.501C5.624,97.395,0,92.305,0,84.895
@@ -293,14 +395,14 @@
                             />
                         </g>
                     </svg>
-                </a>
-                <!--
+            </a>
+            <!--
 
-        ============================================================================ svg you tube
+    ============================================================================ svg you tube
 
-        -->
-                <a href="#" class="d-inline">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="553.102px"
+    -->
+            <a href="#" class="d-inline">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="553.102px"
                         height="553.102px" viewBox="0 0 553.102 553.102" style="enable-background:new 0 0 553.102 553.102;" xml:space="preserve">
                         <g>
                             <g>
@@ -345,15 +447,15 @@
                             </g>
                         </g>
                     </svg>
-                </a>
+            </a>
 
-                <!--
+            <!--
 
-        ============================================================ svg vime
+    ============================================================ svg vime
 
-        -->
-                <a href="#" class="d-inline">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="616px" height="616px" viewBox="0 0 616 616"
+    -->
+            <a href="#" class="d-inline">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="616px" height="616px" viewBox="0 0 616 616"
                         style="enable-background:new 0 0 616 616;" xml:space="preserve">
                         <g>
                             <path class="circle" d="M 612,306 C 612,137.004 474.995,0 306,0 137.004,0 0,137.004 0,306 0,474.995 137.004,612 306,612 474.995,612 612,474.995 612,306 Z M 27.818,306 C 27.818,152.36 152.36,27.818 306,27.818 459.64,27.818 584.182,152.36 584.182,306 584.182,459.64 459.64,584.182 306,584.182 152.36,584.182 27.818,459.64 27.818,306 Z"
@@ -362,66 +464,66 @@
                                 id="path4594" style="stroke-width:0.8085115" />
                         </g>
                     </svg>
-                </a>
-            </div>
+            </a>
         </div>
-        <!--
+    </div>
+    <!--
 
 
-    ========================================================== footer desktop
+========================================================== footer desktop
 
-    -->
-        <div class="container hidden-lg-down">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
-                    <img src="../img/footer/information.svg" alt="information">
-                    <h2 class="mt-4">INFOS PRATIQUES</h2>
-                    <p>OUVERT : LUN. 14H - 18H,</p>
-                    <p>MER. > DIM. 10H - 18H. fermé le mardi.</p>
-                    <p>TARIF PLEIN
-                        <SPAN>7 € </SPAN>/TARIF réduit <span>4 €</span></p>
-                    <p>Place de la République 59000 Lille</p>
-                </div>
-                <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
-                    <img class="musee mb-1" src="../img/footer/home3.svg" alt="musée">
-                    <h2 class="mt_3">musée privé</h2>
-                    <nav class="nocevento">
-                        <ul>
-                            <li><a href="#">devenir mécène</a></li>
-                            <li><a href="#">soutenir un projet</a></li>
-                            <li><a href="#">organiser un événement</a></li>
-                            <li><a href="#">adhérer</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
-                    <img src="../img/footer/credit-card-.svg" alt="presse">
-                    <h2 class="mt-4">presse</h2>
-                    <nav class="nocevento">
-                        <ul>
-                            <li><a href="#">dossier de presse</a></li>
-                            <li><a href="#">photothèque</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
+-->
+    <div class="container hidden-lg-down">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                <img src="../img/footer/information.svg" alt="information">
+                <h2 class="mt-4">INFOS PRATIQUES</h2>
+                <p>OUVERT : LUN. 14H - 18H,</p>
+                <p>MER. > DIM. 10H - 18H. fermé le mardi.</p>
+                <p>TARIF PLEIN
+                    <SPAN>7 € </SPAN>/TARIF réduit <span>4 €</span></p>
+                <p>Place de la République 59000 Lille</p>
+            </div>
+            <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                <img class="musee mb-1" src="../img/footer/home3.svg" alt="musée">
+                <h2 class="mt_3">musée privé</h2>
+                <nav class="nocevento">
+                    <ul>
+                        <li><a href="#">devenir mécène</a></li>
+                        <li><a href="#">soutenir un projet</a></li>
+                        <li><a href="#">organiser un événement</a></li>
+                        <li><a href="#">adhérer</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                <img src="../img/footer/credit-card-.svg" alt="presse">
+                <h2 class="mt-4">presse</h2>
+                <nav class="nocevento">
+                    <ul>
+                        <li><a href="#">dossier de presse</a></li>
+                        <li><a href="#">photothèque</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
+            <!--
+
+        =========================================================svg réseaux sociaux
+
+        -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                <img src="../img/footer/share2.svg" alt="reseaux sociaux">
+                <h2 class="mt-4">suivez-nous</h2>
+                <p class="mb-3">sur les réseaux sociaux</p>
                 <!--
 
-            =========================================================svg réseaux sociaux
-
+            ===============================================svg twitter
             -->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
-                    <img src="../img/footer/share2.svg" alt="reseaux sociaux">
-                    <h2 class="mt-4">suivez-nous</h2>
-                    <p class="mb-3">sur les réseaux sociaux</p>
-                    <!--
-
-                ===============================================svg twitter
-                -->
-                    <a href="#" class="d-inline">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px"
+                <a href="#" class="d-inline">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px"
                             height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                             <g>
                                 <g>
@@ -439,15 +541,15 @@
                                 </g>
                             </g>
                         </svg>
-                    </a>
-                    <!--
+                </a>
+                <!--
 
 
-                ========================================================================svg facebook
+            ========================================================================svg facebook
 
-                -->
-                    <a href="#" class="d-inline">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px"
+            -->
+                <a href="#" class="d-inline">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px"
                             height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                             <g>
                                 <g>
@@ -461,14 +563,14 @@
                             </g>
 
                         </svg>
-                    </a>
-                    <!--
+                </a>
+                <!--
 
-                ============================================================== svg instagram
+            ============================================================== svg instagram
 
-                -->
-                    <a href="#" class="d-inline">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.395px"
+            -->
+                <a href="#" class="d-inline">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.395px"
                             height="97.395px" viewBox="0 0 97.395 97.395" style="enable-background:new 0 0 97.395 97.395;" xml:space="preserve">
                             <g>
                                 <path d="M12.501,0h72.393c6.875,0,12.5,5.09,12.5,12.5v72.395c0,7.41-5.625,12.5-12.5,12.5H12.501C5.624,97.395,0,92.305,0,84.895
@@ -481,14 +583,14 @@
                                 />
                             </g>
                         </svg>
-                    </a>
-                    <!--
+                </a>
+                <!--
 
-                ============================================================================ svg you tube
+            ============================================================================ svg you tube
 
-                -->
-                    <a href="#" class="d-inline">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="553.102px"
+            -->
+                <a href="#" class="d-inline">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="553.102px"
                             height="553.102px" viewBox="0 0 553.102 553.102" style="enable-background:new 0 0 553.102 553.102;"
                             xml:space="preserve">
                             <g>
@@ -534,14 +636,14 @@
                                 </g>
                             </g>
                         </svg>
-                    </a>
-                    <!--
+                </a>
+                <!--
 
-                ============================================================ svg vime
+            ============================================================ svg vime
 
-                -->
-                    <a href="#" class="d-inline">
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="616px" height="616px" viewBox="0 0 616 616"
+            -->
+                <a href="#" class="d-inline">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="616px" height="616px" viewBox="0 0 616 616"
                             style="enable-background:new 0 0 616 616;" xml:space="preserve">
                             <g>
                                 <path class="circle" d="M 612,306 C 612,137.004 474.995,0 306,0 137.004,0 0,137.004 0,306 0,474.995 137.004,612 306,612 474.995,612 612,474.995 612,306 Z M 27.818,306 C 27.818,152.36 152.36,27.818 306,27.818 459.64,27.818 584.182,152.36 584.182,306 584.182,459.64 459.64,584.182 306,584.182 152.36,584.182 27.818,459.64 27.818,306 Z"
@@ -550,93 +652,94 @@
                                     style="stroke-width:0.8085115" />
                             </g>
                         </svg>
-                    </a>
-                </div>
-                <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
+                </a>
             </div>
-            <!-- /.row -->
-            <!--
+            <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
+        </div>
+        <!-- /.row -->
+        <!--
 
-        ================================================= links
+    ================================================= links
 
-        -->
-            <div class="row border mt-2 pt-4">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
-                    <a href="#" class="d-inline nevenceto">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 44 44">
+    -->
+        <div class="row border mt-2 pt-4">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+                <a href="#" class="d-inline nevenceto">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 44 44">
+                        <g>
                             <g>
                                 <g>
-                                    <g>
-                                        <path d="M43,6H1C0.447,6,0,6.447,0,7v30c0,0.553,0.447,1,1,1h42c0.552,0,1-0.447,1-1V7C44,6.447,43.552,6,43,6z M42,33.581     L29.612,21.194l-1.414,1.414L41.59,36H2.41l13.392-13.392l-1.414-1.414L2,33.581V8h40V33.581z"
-                                        />
-                                    </g>
-                                </g>
-                                <g>
-                                    <g>
-                                        <path d="M39.979,8L22,25.979L4.021,8H2v0.807L21.293,28.1c0.391,0.391,1.023,0.391,1.414,0L42,8.807V8H39.979z" />
-                                    </g>
+                                    <path d="M43,6H1C0.447,6,0,6.447,0,7v30c0,0.553,0.447,1,1,1h42c0.552,0,1-0.447,1-1V7C44,6.447,43.552,6,43,6z M42,33.581     L29.612,21.194l-1.414,1.414L41.59,36H2.41l13.392-13.392l-1.414-1.414L2,33.581V8h40V33.581z"
+                                    />
                                 </g>
                             </g>
-                        </svg>
-                        Nous contacter
-                    </a>
-                </div>
-                <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 left pr-5">
-                    <a href="#" class="nevenceto">Mentions légales</a>
-                </div>
-                <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 left pr-5">
-                    <a href="#" class="nevenceto">Liens</a>
-                </div>
-                <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 left pr-5">
-                    <a href="#" class="nevenceto">Plan de site</a>
-                </div>
-                <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
+                            <g>
+                                <g>
+                                    <path d="M39.979,8L22,25.979L4.021,8H2v0.807L21.293,28.1c0.391,0.391,1.023,0.391,1.414,0L42,8.807V8H39.979z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    Nous contacter
+                </a>
             </div>
-            <!-- /.row -->
-            <!--
-
-        ================================================== mecenat
-
-        -->
-            <div class="row justify-content-end">
-                <div class="col-7 p-lg-5">
-                    <p class="d-inline mecene mr-5">Site réalisé grâce au mécénat de</p>
-                    <img src="../img/footer/mecene.png" alt="caisse d'épargne">
-                </div>
+            <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 left pr-5">
+                <a href="#" class="nevenceto">Mentions légales</a>
             </div>
-
+            <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 left pr-5">
+                <a href="#" class="nevenceto">Liens</a>
+            </div>
+            <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 left pr-5">
+                <a href="#" class="nevenceto">Plan de site</a>
+            </div>
+            <!-- /.col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 -->
         </div>
-        <!-- /.container -->
-    </footer>
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')
-    </script>
-    <script src="../js/plugins.js"></script>
-    <script src="../js/main.js"></script>
+        <!-- /.row -->
+        <!--
 
-    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    ================================================== mecenat
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function (b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l;
-            b[l] || (b[l] =
-                function () {
-                    (b[l].q = b[l].q || []).push(arguments)
-                });
-            b[l].l = +new Date;
-            e = o.createElement(i);
-            r = o.getElementsByTagName(i)[0];
-            e.src = 'https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X', 'auto');
-        ga('send', 'pageview');
-    </script>
+    -->
+        <div class="row justify-content-end">
+            <div class="col-7 p-lg-5">
+                <p class="d-inline mecene mr-5">Site réalisé grâce au mécénat de</p>
+                <img src="../img/footer/mecene.png" alt="caisse d'épargne">
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+</footer>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')
+</script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+
+<script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+</script>
 </body>
 
 </html>
