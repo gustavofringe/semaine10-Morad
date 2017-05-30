@@ -612,6 +612,128 @@ textarea {
   opacity: 1;
   background: #D8383F;
 }
+/*=======================END PART BLACK============*/
+
+/*===============PART BANDE ADDITIONNEL===========*/
+
+.bandeauApp {
+    position: relative;
+    min-height: 150px;
+    width: 100%;
+    background-color: #D8383F;
+    color: #FFF;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+.bandeauApp .imgDevices {
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    right: 60%;
+    color: white;
+}
+.bandeauApp p {
+    font-family: "novecentobook";
+    font-size: 24px;
+    /*font-size: 2.4rem;*/
+    margin-left: 42%;
+    vertical-align: middle;
+    padding-top: 51px;
+    text-align: left;
+    padding-bottom: 35px;
+}
+.bandeauApp p span {
+    font-family: "lovelo";
+    display: block;
+}
+.st0, .st2 , g {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #FFF;
+    fill: #FFF;
+}
+.st1{
+  fill: #D8383F;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+.expander-light {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background-color: #FFF;
+}
+.main-container {
+    width: 1280px;
+    margin: 0 auto;
+    display: block;
+}
+.container-int {
+    margin-left: 65px;
+    margin-right: 65px;
+    max-height: 493px;
+    text-align: justify;
+}
+.expander-light .englobeur1 {
+    margin-left: 60px;
+}
+.englobeur {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.englobeur a {
+    color: inherit;
+    text-decoration: none;
+}
+.icon-tower::before {
+    content: "\e933";
+}
+.englobeur1 .icon {
+    color: #1D1D1E;
+    font-size: 70px;
+
+}
+.icon {
+    font-family: 'pba';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-headband-light {
+    font-family: "lovelo";
+    color: #1D1D1E;
+    font-size: 24px;
+
+    display: inline-block;
+    margin-left: 40px;
+    vertical-align: middle;
+}
+.englobeur2 {
+    /*margin-left: 160px;*/
+
+}
+.icon-globe::before {
+    content: "\e91a";
+}
    /*========MEDIA QUERIES DESKTOP LARGE========*/
    /*============================================*/
 
