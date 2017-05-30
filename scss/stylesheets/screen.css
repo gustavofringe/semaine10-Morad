@@ -248,10 +248,48 @@ desktop format
     height: 70px;
   }
 
+  /* line 27, ../sass/_desktop.scss */
+  #visited .img-visited {
+    position: relative;
+  }
+  /* line 29, ../sass/_desktop.scss */
+  #visited .img-visited img {
+    width: 100%;
+  }
+  /* line 32, ../sass/_desktop.scss */
+  #visited .img-visited p {
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 23px;
+    width: 290px;
+    height: 140px;
+    background-color: #fff;
+    color: black;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    padding: 50px 0 0 30px;
+  }
+  /* line 45, ../sass/_desktop.scss */
+  #visited .img-visited p span {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+  /* line 52, ../sass/_desktop.scss */
+  #visited:hover p {
+    color: #D8383F;
+    cursor: pointer;
+  }
+
   /*===================================================================================
 footer
 ======================================================================================*/
-  /* line 29, ../sass/_desktop.scss */
+  /* line 60, ../sass/_desktop.scss */
   #footer {
     /*.nevenceto{
       font-family:"lovelo";
@@ -263,31 +301,31 @@ footer
       }
     }*/
   }
-  /* line 30, ../sass/_desktop.scss */
+  /* line 61, ../sass/_desktop.scss */
   #footer h2 {
     font-size: 30px;
   }
-  /* line 33, ../sass/_desktop.scss */
+  /* line 64, ../sass/_desktop.scss */
   #footer img {
     height: 50px;
   }
-  /* line 36, ../sass/_desktop.scss */
+  /* line 67, ../sass/_desktop.scss */
   #footer .musee {
     height: 60px;
   }
-  /* line 39, ../sass/_desktop.scss */
+  /* line 70, ../sass/_desktop.scss */
   #footer .mt_3 {
     margin-top: 10px;
   }
-  /* line 42, ../sass/_desktop.scss */
+  /* line 73, ../sass/_desktop.scss */
   #footer .border {
     border-top: 2px solid white;
   }
-  /* line 54, ../sass/_desktop.scss */
+  /* line 85, ../sass/_desktop.scss */
   #footer .left {
     text-align: right;
   }
-  /* line 57, ../sass/_desktop.scss */
+  /* line 88, ../sass/_desktop.scss */
   #footer .mecene {
     font-size: 10px;
     color: #4E5257;
