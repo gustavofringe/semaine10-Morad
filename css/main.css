@@ -586,6 +586,7 @@ textarea {
     vertical-align: top;
     margin-right: 25px;
 }
+
 .text{
   color: white;
 }
@@ -677,13 +678,13 @@ svg:not(:root) {
     display: block;
 }
 .container-int {
-    margin-left: 65px;
-    margin-right: 65px;
+    margin-left: 35px;
+    margin-right: 25px;
     max-height: 493px;
-    text-align: justify;
+
 }
 .expander-light .englobeur1 {
-    margin-left: 60px;
+    margin-left: 30px;
 }
 .englobeur {
     display: inline-block;
@@ -716,6 +717,7 @@ svg:not(:root) {
     -moz-osx-font-smoothing: grayscale;
     display: inline-block;
     vertical-align: middle;
+    width: 10%;
 }
 
 .text-headband-light {
@@ -728,12 +730,13 @@ svg:not(:root) {
     vertical-align: middle;
 }
 .englobeur2 {
-    /*margin-left: 160px;*/
+  padding: 0;
 
 }
 .icon-globe::before {
     content: "\e91a";
 }
+
    /*========MEDIA QUERIES DESKTOP LARGE========*/
    /*============================================*/
 
