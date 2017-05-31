@@ -116,9 +116,15 @@ textarea {
    /*==============MOBILE FIRST===============*/
    @media (min-width:320px) {
 
+.englobeur{
+  border: 4px solid #000;
+
+}
+
 .englobeur p {
 
-  font-size: x-small;
+  font-size: 12px;
+
 }
 
 .expander-light {
@@ -694,9 +700,6 @@ svg:not(:root) {
     max-height: 493px;
 
 }
-.expander-light .englobeur1 {
-    margin-left: 30px;
-}
 .englobeur {
     display: inline-block;
     vertical-align: middle;
@@ -1037,6 +1040,9 @@ svg:not(:root) {
       width: 100%;
       background-color: #FFF;
     }
+    .expander-light .englobeur1 {
+      margin-left: 30px;
+    }
 }
 
 @media (min-width:760px) {
@@ -1044,7 +1050,9 @@ svg:not(:root) {
   .expander-light {
     height: 150px;
   }
-  
+  .expander-light .englobeur1 {
+    margin-left: 30px;
+  }
 }
 
 
