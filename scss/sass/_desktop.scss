@@ -2,6 +2,58 @@
 desktop format
 ===================================================================================================*/
 @media only screen and (min-width: 1200px){
+  /*=============================================================================
+  agenda
+  =================================================================================*/
+#agenda{
+  .bordered{
+    width: 160px;
+    float: right;
+  }
+  .top{
+    position: relative;
+    .angle{
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      top: -17px;
+      right: -20px;
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+  #visited{
+    .img-visited{
+      position: relative;
+      img{
+        width: 100%;
+      }
+      p{
+        @include transition-duration(0.3s);
+        text-transform: uppercase;
+        line-height:20px;
+        font-size: 23px;
+        width: 290px;
+        height: 140px;
+        background-color: #fff;
+        color: black;
+        position: absolute;
+        bottom: 50px;
+        right: 20px;
+        padding: 50px 0 0 30px;
+        span{
+          margin: 0;
+          padding: 0;
+          font-weight: bold;
+        }
+      }
+    }
+    &:hover p{
+      color: $a-hover-footer;
+      cursor: pointer;
+    }
+  }
   /*===================================================================================
 footer
 ======================================================================================*/

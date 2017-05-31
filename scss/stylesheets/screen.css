@@ -13,10 +13,133 @@ import font-face
   font-family: "novecento";
   src: url("../../_fonts/Novecentosanswide-Book.otf");
 }
+/*=============================================================================
+agenda
+=================================================================================*/
+/* line 30, ../sass/screen.scss */
+#agenda {
+  padding-top: 30px;
+}
+/* line 32, ../sass/screen.scss */
+#agenda h1 {
+  font-size: 13px;
+  font-family: "lovelo";
+  width: 120px;
+  margin: 0 auto;
+}
+/* line 38, ../sass/screen.scss */
+#agenda .calendar {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+/* line 43, ../sass/screen.scss */
+#agenda .point {
+  width: 4%;
+  height: 25px;
+  margin: 10px auto;
+}
+/* line 49, ../sass/screen.scss */
+#agenda svg {
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 14.06499958;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+}
+/* line 61, ../sass/screen.scss */
+#agenda svg:hover {
+  stroke: #D8383F;
+}
+/* line 65, ../sass/screen.scss */
+#agenda .border {
+  margin: 30px auto;
+  text-align: center;
+  font-size: 15px;
+  font-family: "lovelo";
+  border: 3px solid black;
+  height: 35px;
+  width: 70%;
+}
+/* line 74, ../sass/screen.scss */
+#agenda .visu {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 77, ../sass/screen.scss */
+#agenda .visu img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 270px;
+}
+/* line 85, ../sass/screen.scss */
+#agenda .visu:hover {
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 red);
+  filter: opacity(0.5) drop-shadow(0 0 0 red);
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 90, ../sass/screen.scss */
+#agenda .top {
+  padding-top: 30px;
+  border-top: 2px solid black;
+}
+/* line 93, ../sass/screen.scss */
+#agenda .top:after {
+  content: '';
+  background: url("../../img/agenda/dessin-2.svg");
+}
+/* line 97, ../sass/screen.scss */
+#agenda .top .lovelo-s {
+  font-family: "lovelo";
+  font-size: 12px;
+  text-transform: lowercase !important;
+}
+/* line 102, ../sass/screen.scss */
+#agenda .top .lovelo {
+  font-family: "lovelo";
+  margin: 0;
+}
+/* line 105, ../sass/screen.scss */
+#agenda .top .lovelo span {
+  font-family: "novecento";
+  color: #D8383F;
+}
+/* line 110, ../sass/screen.scss */
+#agenda .top .nevenceto {
+  font-family: "novecento";
+}
+/* line 114, ../sass/screen.scss */
+#agenda .bordered {
+  height: 55px !important;
+  padding: 10px;
+  width: 50%;
+  border: 3px solid black;
+  margin-bottom: 35px;
+}
+/* line 120, ../sass/screen.scss */
+#agenda .bordered img {
+  height: 40px;
+}
+
 /*==============================================================================
 footer
 ================================================================================*/
-/* line 24, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #footer {
   background-color: #1D1D1E;
   color: #ffffff;
@@ -25,55 +148,58 @@ footer
   width of svg clock and marker
   =========================================*/
 }
-/* line 28, ../sass/screen.scss */
-#footer h2, #footer p, #footer a {
+/* line 135, ../sass/screen.scss */
+#footer h2,
+#footer p,
+#footer a {
   text-transform: uppercase;
 }
-/* line 34, ../sass/screen.scss */
-#footer .clock, #footer .marker {
+/* line 143, ../sass/screen.scss */
+#footer .clock,
+#footer .marker {
   width: 20px;
   height: 20px;
 }
-/* line 38, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 #footer .home {
   height: 30px;
 }
-/* line 41, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 #footer .center {
   width: 230px;
   margin: 20px auto !important;
 }
-/* line 45, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 #footer .center-m {
   width: 260px;
   margin: 0 auto !important;
 }
-/* line 49, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 #footer .contact {
   width: 150px;
 }
-/* line 52, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #footer h2 {
   font-family: "lovelo";
   font-size: 15px;
 }
-/* line 56, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 #footer p {
   font-family: 'novecento';
   font-size: 13px;
   line-height: 1.6em;
   margin: 0;
 }
-/* line 61, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 #footer p span {
   font-weight: bold;
 }
-/* line 65, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 #footer svg {
   height: 30px;
   width: 30px;
 }
-/* line 70, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 #footer a {
   margin-right: 5px;
   font-family: "novecento";
@@ -86,7 +212,7 @@ footer
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 80, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 #footer a:hover {
   color: #D8383F;
   fill: #D8383F;
@@ -99,10 +225,71 @@ tablet format
 desktop format
 ===================================================================================================*/
 @media only screen and (min-width: 1200px) {
+  /*=============================================================================
+  agenda
+  =================================================================================*/
+  /* line 9, ../sass/_desktop.scss */
+  #agenda .bordered {
+    width: 160px;
+    float: right;
+  }
+  /* line 13, ../sass/_desktop.scss */
+  #agenda .top {
+    position: relative;
+  }
+  /* line 15, ../sass/_desktop.scss */
+  #agenda .top .angle {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: -17px;
+    right: -20px;
+    width: 70px;
+    height: 70px;
+  }
+
+  /* line 27, ../sass/_desktop.scss */
+  #visited .img-visited {
+    position: relative;
+  }
+  /* line 29, ../sass/_desktop.scss */
+  #visited .img-visited img {
+    width: 100%;
+  }
+  /* line 32, ../sass/_desktop.scss */
+  #visited .img-visited p {
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 23px;
+    width: 290px;
+    height: 140px;
+    background-color: #fff;
+    color: black;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    padding: 50px 0 0 30px;
+  }
+  /* line 45, ../sass/_desktop.scss */
+  #visited .img-visited p span {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+  /* line 52, ../sass/_desktop.scss */
+  #visited:hover p {
+    color: #D8383F;
+    cursor: pointer;
+  }
+
   /*===================================================================================
 footer
 ======================================================================================*/
-  /* line 8, ../sass/_desktop.scss */
+  /* line 60, ../sass/_desktop.scss */
   #footer {
     /*.nevenceto{
       font-family:"lovelo";
@@ -114,31 +301,31 @@ footer
       }
     }*/
   }
-  /* line 9, ../sass/_desktop.scss */
+  /* line 61, ../sass/_desktop.scss */
   #footer h2 {
     font-size: 30px;
   }
-  /* line 12, ../sass/_desktop.scss */
+  /* line 64, ../sass/_desktop.scss */
   #footer img {
     height: 50px;
   }
-  /* line 15, ../sass/_desktop.scss */
+  /* line 67, ../sass/_desktop.scss */
   #footer .musee {
     height: 60px;
   }
-  /* line 18, ../sass/_desktop.scss */
+  /* line 70, ../sass/_desktop.scss */
   #footer .mt_3 {
     margin-top: 10px;
   }
-  /* line 21, ../sass/_desktop.scss */
+  /* line 73, ../sass/_desktop.scss */
   #footer .border {
     border-top: 2px solid white;
   }
-  /* line 33, ../sass/_desktop.scss */
+  /* line 85, ../sass/_desktop.scss */
   #footer .left {
     text-align: right;
   }
-  /* line 36, ../sass/_desktop.scss */
+  /* line 88, ../sass/_desktop.scss */
   #footer .mecene {
     font-size: 10px;
     color: #4E5257;
