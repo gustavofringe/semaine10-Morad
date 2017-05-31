@@ -4,84 +4,192 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass";
+
 /*=====================================================================
 import font-face
 =====================================================================*/
+
 @font-face {
   font-family: "lovelo";
   src: url('../../_fonts/Lovelo_Black.otf');
 }
+
 @font-face {
   font-family: "novecento";
   src: url("../../_fonts/Novecentosanswide-Book.otf");
 }
+
 $a-hover-footer: #D8383F;
 $footer: #1D1D1E;
 $a-footer:#ffffff;
+
+/*=============================================================================
+agenda
+=================================================================================*/
+
+#agenda {
+  padding-top: 30px;
+  h1{
+    font-size: 13px;
+    font-family: "lovelo";
+    width: 120px;
+    margin: 0 auto;
+  }
+  .calendar {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+  }
+    .point{
+      width: 4%;
+      height: 25px;
+      margin: 10px auto;
+    }
+
+  svg{
+    vertical-align:middle;
+    height: 30px;
+    width: 30px;
+    fill:none;
+    stroke:#000000;
+    stroke-width:14.06499958;
+    stroke-linecap:butt;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+    &:hover{
+      stroke: $a-hover-footer;
+    }
+  }
+  .border{
+    margin: 30px auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: "lovelo";
+    border: 3px solid black;
+    height: 35px;
+    width: 70%;
+  }
+  .visu{
+    margin: 0;
+    padding: 0;
+    img{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 270px;
+    }
+    background-size: cover;
+    @include transition-duration(0.2s);
+    &:hover{
+      @include filter( opacity(.5) drop-shadow(0 0 0 red));
+      @include transition-duration(0.2s);
+    }
+  }
+  .top{
+    padding-top: 30px;
+    border-top: 2px solid black;
+    &:after{
+      content: '';
+      background: url('../../img/agenda/dessin-2.svg');
+    }
+    .lovelo-s{
+      font-family:"lovelo";
+      font-size: 12px;
+      text-transform: lowercase !important;
+    }
+    .lovelo{
+      font-family:"lovelo";
+      margin: 0;
+      span{
+        font-family:"novecento";
+        color: $a-hover-footer;
+      }
+    }
+    .nevenceto{
+      font-family:"novecento";
+    }
+  }
+  .bordered{
+    height: 55px !important;
+    padding:10px;
+    width: 50%;
+    border: 3px solid black;
+    margin-bottom:35px;
+    img{
+      height: 40px;
+    }
+  }
+}
+
+
 /*==============================================================================
 footer
 ================================================================================*/
-#footer{
+
+#footer {
   background-color: $footer;
   color: $a-footer;
-  padding-top:85px;
-  h2, p, a{
+  padding-top: 85px;
+  h2,
+  p,
+  a {
     text-transform: uppercase;
   }
   /*=======================================
   width of svg clock and marker
   =========================================*/
-  .clock, .marker{
+  .clock,
+  .marker {
     width: 20px;
     height: 20px;
   }
-  .home{
+  .home {
     height: 30px;
   }
-  .center{
+  .center {
     width: 230px;
     margin: 20px auto !important;
   }
-  .center-m{
+  .center-m {
     width: 260px;
     margin: 0 auto !important;
   }
-  .contact{
+  .contact {
     width: 150px;
   }
-  h2{
-    font-family:"lovelo";
+  h2 {
+    font-family: "lovelo";
     font-size: 15px;
   }
-  p{
-    font-family:'novecento';
+  p {
+    font-family: 'novecento';
     font-size: 13px;
-    line-height:1.6em;
+    line-height: 1.6em;
     margin: 0;
-    span{
+    span {
       font-weight: bold;
     }
   }
-  svg{
-
+  svg {
     height: 30px;
     width: 30px;
   }
-  a{
-    margin-right:5px;
-    font-family:"novecento";
+  a {
+    margin-right: 5px;
+    font-family: "novecento";
     font-size: 13px;
     fill: white;
     color: white;
-
     text-decoration: none;
     @include transition-duration(0.3s);
-
-    &:hover{
+    &:hover {
       color: $a-hover-footer;
       fill: $a-hover-footer;
     }
   }
 }
+
 @import "tablet";
 @import "desktop";
