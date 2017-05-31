@@ -2,26 +2,45 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass";
 
 /*=====================================================================
 import font-face
 =====================================================================*/
-
 @font-face {
-  font-family: "lovelo";
-  src: url('../../_fonts/Lovelo_Black.otf');
+  font-family: "pba";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../_fonts/pba.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "novecento";
-  src: url("../../_fonts/Novecentosanswide-Book.otf");
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../_fonts/novecentowide-book-webfont.woff2") ;
+}
+@font-face {
+  font-family: "loveloblack";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../_fonts/Lovelo_Black.woff") format("woff");
+}
+@font-face {
+  font-family: "open_sanslight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../_fonts/opensans-light-webfont.woff2") ;
+}
+@font-face {
+  font-family: "atc_overlookregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../_fonts/atcoverlook-regular.woff') ;
 }
 
 $a-hover-footer: #D8383F;
 $footer: #1D1D1E;
-$a-footer:#ffffff;
+$a-footer: #ffffff;
 
 /*=============================================================================
 agenda
@@ -29,9 +48,12 @@ agenda
 
 #agenda {
   padding-top: 30px;
-  h1{
+  .nevenceto{
+    font-family: "open_sanslight";
+  }
+  h1 {
     font-size: 13px;
-    font-family: "lovelo";
+    font-family: "loveloblack";
     width: 120px;
     margin: 0 auto;
   }
@@ -40,41 +62,41 @@ agenda
     width: 50px;
     height: 50px;
   }
-    .point{
-      width: 4%;
-      height: 25px;
-      margin: 10px auto;
-    }
+  .point {
+    width: 4%;
+    height: 25px;
+    margin: 10px auto;
+  }
 
-  svg{
-    vertical-align:middle;
+  svg {
+    vertical-align: middle;
     height: 30px;
     width: 30px;
-    fill:none;
-    stroke:#000000;
-    stroke-width:14.06499958;
-    stroke-linecap:butt;
-    stroke-linejoin:miter;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-opacity:1;
-    &:hover{
+    fill: none;
+    stroke: #000000;
+    stroke-width: 14.06499958;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
+    &:hover {
       stroke: $a-hover-footer;
     }
   }
-  .border{
+  .border {
     margin: 30px auto;
     text-align: center;
     font-size: 15px;
-    font-family: "lovelo";
+    font-family: "loveloblack";
     border: 3px solid black;
     height: 35px;
     width: 70%;
   }
-  .visu{
+  .visu {
     margin: 0;
     padding: 0;
-    img{
+    img {
       margin: 0;
       padding: 0;
       width: 100%;
@@ -82,47 +104,69 @@ agenda
     }
     background-size: cover;
     @include transition-duration(0.2s);
-    &:hover{
-      @include filter( opacity(.5) drop-shadow(0 0 0 red));
+    &:hover {
+      @include filter(opacity(.5) drop-shadow(0 0 0 red));
       @include transition-duration(0.2s);
     }
   }
-  .top{
+  .pink {
+    img {
+      fill: #D3336C;
+    }
+    border-top: 2px solid #D3336C;
+  }
+  .purple {
+    border-top: 2px solid #935297;
+  }
+  .top {
     padding-top: 30px;
-    border-top: 2px solid black;
-    &:after{
+    &:after {
       content: '';
       background: url('../../img/agenda/dessin-2.svg');
     }
-    .lovelo-s{
-      font-family:"lovelo";
+    .lovelo-s {
+      font-family: "loveloblack";
       font-size: 12px;
       text-transform: lowercase !important;
     }
-    .lovelo{
-      font-family:"lovelo";
+    .lovelo {
+      font-family: "loveloblack";
       margin: 0;
-      span{
-        font-family:"novecento";
+      span {
+        font-family: "novecento";
         color: $a-hover-footer;
       }
     }
-    .nevenceto{
-      font-family:"novecento";
+    .nevenceto {
+      font-family: "open_sanslight";
     }
   }
-  .bordered{
+  .bordered {
     height: 55px !important;
-    padding:10px;
+    padding: 10px;
     width: 50%;
     border: 3px solid black;
-    margin-bottom:35px;
-    img{
+    margin-bottom: 35px;
+    img {
       height: 40px;
     }
   }
 }
+/*====================================================================================================
+visited page
+========================================================================================================*/
 
+#visited {
+  p{
+
+    font-family: "pba";
+  }
+  .d-block {
+    display: block !important;
+    .img-visited {
+    }
+  }
+}
 
 /*==============================================================================
 footer
