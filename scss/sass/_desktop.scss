@@ -29,9 +29,6 @@ desktop format
   ===========================================================================================*/
   #visited {
 
-    .icon-parcours:before {
-      content: '\e922';
-    }
     .img-visited {
       position: relative;
       img {
@@ -58,26 +55,25 @@ desktop format
         }
       }
     }
-    &:hover p {
-      color: $a-hover-footer;
-      cursor: pointer;
-    }
-    .parcours {
-      color: white;
-      background-color: $footer;
-      p {
-        padding-top: 30px;
-        width: 270px;
-        text-transform: uppercase;
-        margin: 0 auto;
-        display: block;
-        font-size: 25px;
+    .second-level{
+      img{
+        height: 715px !important;
       }
-      img {
-        display: block;
-        margin: 0 auto;
-        width: 35px;
-        height: 35px;
+    }
+
+
+    .icon-parcours{
+      position: absolute;
+      top: 20px;
+      left: 36%;
+      width: 70px;
+      height: 70px;
+      &:before{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        content: '\e922';
+        font-size: 50px;
       }
     }
     .container-fluid {

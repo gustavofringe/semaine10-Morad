@@ -29,37 +29,43 @@ import font-face
   font-weight: normal;
   src: url("../../_fonts/opensans-light-webfont.woff2");
 }
+@font-face {
+  font-family: "atc_overlookregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../_fonts/atcoverlook-regular.woff");
+}
 /*=============================================================================
 agenda
 =================================================================================*/
-/* line 43, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 #agenda {
   padding-top: 30px;
 }
-/* line 45, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 #agenda .nevenceto {
   font-family: "open_sanslight";
 }
-/* line 48, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 #agenda h1 {
   font-size: 13px;
   font-family: "loveloblack";
   width: 120px;
   margin: 0 auto;
 }
-/* line 54, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 #agenda .calendar {
   margin: 0 auto;
   width: 50px;
   height: 50px;
 }
-/* line 59, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 #agenda .point {
   width: 4%;
   height: 25px;
   margin: 10px auto;
 }
-/* line 65, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 #agenda svg {
   vertical-align: middle;
   height: 30px;
@@ -73,11 +79,11 @@ agenda
   stroke-dasharray: none;
   stroke-opacity: 1;
 }
-/* line 77, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 #agenda svg:hover {
   stroke: #D8383F;
 }
-/* line 81, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #agenda .border {
   margin: 30px auto;
   text-align: center;
@@ -87,7 +93,7 @@ agenda
   height: 35px;
   width: 70%;
 }
-/* line 90, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 #agenda .visu {
   margin: 0;
   padding: 0;
@@ -97,14 +103,14 @@ agenda
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 93, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 #agenda .visu img {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 270px;
 }
-/* line 101, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 #agenda .visu:hover {
   -webkit-filter: opacity(0.5) drop-shadow(0 0 0 red);
   filter: opacity(0.5) drop-shadow(0 0 0 red);
@@ -113,48 +119,48 @@ agenda
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 106, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 #agenda .pink {
   border-top: 2px solid #D3336C;
 }
-/* line 107, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 #agenda .pink img {
   fill: #D3336C;
 }
-/* line 112, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 #agenda .purple {
   border-top: 2px solid #935297;
 }
-/* line 115, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 #agenda .top {
   padding-top: 30px;
 }
-/* line 117, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 #agenda .top:after {
   content: '';
   background: url("../../img/agenda/dessin-2.svg");
 }
-/* line 121, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 #agenda .top .lovelo-s {
   font-family: "loveloblack";
   font-size: 12px;
   text-transform: lowercase !important;
 }
-/* line 126, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #agenda .top .lovelo {
   font-family: "loveloblack";
   margin: 0;
 }
-/* line 129, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 #agenda .top .lovelo span {
   font-family: "novecento";
   color: #D8383F;
 }
-/* line 134, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 #agenda .top .nevenceto {
   font-family: "open_sanslight";
 }
-/* line 138, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 #agenda .bordered {
   height: 55px !important;
   padding: 10px;
@@ -162,24 +168,107 @@ agenda
   border: 3px solid black;
   margin-bottom: 35px;
 }
-/* line 144, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 #agenda .bordered img {
   height: 40px;
 }
 
-/* line 151, ../sass/screen.scss */
-#visited p {
-  font-family: "pba";
+/*====================================================================================================
+visited page
+========================================================================================================*/
+/* line 160, ../sass/screen.scss */
+#visited .black {
+  padding: 0;
+  margin: 0;
+  background-color: #1D1D1E;
 }
-/* line 155, ../sass/screen.scss */
-#visited .d-block {
-  display: block !important;
+/* line 164, ../sass/screen.scss */
+#visited .black .d-block {
+  margin: 0 auto;
+  width: 80%;
+}
+/* line 168, ../sass/screen.scss */
+#visited .black p {
+  background-color: white;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+/* line 173, ../sass/screen.scss */
+#visited .black p span {
+  font-family: 'novecento';
+  font-weight: bold;
+}
+/* line 178, ../sass/screen.scss */
+#visited .black .list.hover {
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  color: #D8383F;
+}
+/* line 186, ../sass/screen.scss */
+#visited .icon-parcours {
+  position: absolute;
+  top: 20px;
+  left: 45%;
+  width: 50px;
+  height: 50px;
+}
+/* line 192, ../sass/screen.scss */
+#visited .icon-parcours:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  content: '\e922';
+  font-size: 30px;
+}
+/* line 200, ../sass/screen.scss */
+#visited .visite {
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  font-family: "atc_overlookregular";
+}
+/* line 206, ../sass/screen.scss */
+#visited .parcours {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #1D1D1E;
+}
+/* line 211, ../sass/screen.scss */
+#visited .parcours p {
+  padding-top: 80px;
+  width: 270px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  font-size: 25px;
+}
+/* line 219, ../sass/screen.scss */
+#visited .parcours img {
+  display: block;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+}
+/* line 226, ../sass/screen.scss */
+#visited .second-level {
+  margin: 0;
+  padding: 0;
+}
+/* line 229, ../sass/screen.scss */
+#visited .second-level img {
+  width: 100%;
+  height: 430px !important;
 }
 
 /*==============================================================================
 footer
 ================================================================================*/
-/* line 166, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 #footer {
   background-color: #1D1D1E;
   color: #ffffff;
@@ -188,58 +277,58 @@ footer
   width of svg clock and marker
   =========================================*/
 }
-/* line 170, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 #footer h2,
 #footer p,
 #footer a {
   text-transform: uppercase;
 }
-/* line 178, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 #footer .clock,
 #footer .marker {
   width: 20px;
   height: 20px;
 }
-/* line 183, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 #footer .home {
   height: 30px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 #footer .center {
   width: 230px;
   margin: 20px auto !important;
 }
-/* line 190, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 #footer .center-m {
   width: 260px;
   margin: 0 auto !important;
 }
-/* line 194, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 #footer .contact {
   width: 150px;
 }
-/* line 197, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 #footer h2 {
   font-family: "lovelo";
   font-size: 15px;
 }
-/* line 201, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 #footer p {
   font-family: 'novecento';
   font-size: 13px;
   line-height: 1.6em;
   margin: 0;
 }
-/* line 206, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 #footer p span {
   font-weight: bold;
 }
-/* line 210, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 #footer svg {
   height: 30px;
   width: 30px;
 }
-/* line 214, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 #footer a {
   margin-right: 5px;
   font-family: "novecento";
@@ -252,10 +341,10 @@ footer
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 222, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 #footer a:hover {
   color: #D8383F;
-  fill: #D8383F;
+  fill: #D8383F !important;
 }
 
 /*======================================================================================
@@ -288,29 +377,25 @@ desktop format
     height: 70px;
   }
 
-  /* line 27, ../sass/_desktop.scss */
-  #visited {
-    padding-top: 180px;
-  }
-  /* line 30, ../sass/_desktop.scss */
-  #visited .icon-parcours:before {
-    content: '\e922';
-  }
-  /* line 33, ../sass/_desktop.scss */
+  /*==========================================================================================
+  visited page
+  ===========================================================================================*/
+  /* line 32, ../sass/_desktop.scss */
   #visited .img-visited {
     position: relative;
   }
-  /* line 35, ../sass/_desktop.scss */
+  /* line 34, ../sass/_desktop.scss */
   #visited .img-visited img {
     width: 100%;
   }
-  /* line 38, ../sass/_desktop.scss */
+  /* line 37, ../sass/_desktop.scss */
   #visited .img-visited p {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     text-transform: uppercase;
+    font-family: "atc_overlookregular";
     line-height: 20px;
     font-size: 23px;
     width: 290px;
@@ -328,38 +413,32 @@ desktop format
     padding: 0;
     font-weight: bold;
   }
-  /* line 58, ../sass/_desktop.scss */
-  #visited:hover p {
-    color: #D8383F;
-    cursor: pointer;
-  }
-  /* line 62, ../sass/_desktop.scss */
-  #visited .parcours {
-    color: white;
-    background-color: #1D1D1E;
+  /* line 59, ../sass/_desktop.scss */
+  #visited .second-level img {
+    height: 715px !important;
   }
   /* line 65, ../sass/_desktop.scss */
-  #visited .parcours p {
-    padding-top: 30px;
-    width: 270px;
-    text-transform: uppercase;
-    margin: 0 auto;
-    display: block;
-    font-size: 25px;
+  #visited .icon-parcours {
+    position: absolute;
+    top: 20px;
+    left: 36%;
+    width: 70px;
+    height: 70px;
   }
-  /* line 73, ../sass/_desktop.scss */
-  #visited .parcours img {
-    display: block;
-    margin: 0 auto;
-    width: 35px;
-    height: 35px;
+  /* line 71, ../sass/_desktop.scss */
+  #visited .icon-parcours:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    content: '\e922';
+    font-size: 50px;
   }
-  /* line 81, ../sass/_desktop.scss */
+  /* line 80, ../sass/_desktop.scss */
   #visited .container-fluid .col-xl-3 {
     margin: 0;
     padding: 0;
   }
-  /* line 85, ../sass/_desktop.scss */
+  /* line 84, ../sass/_desktop.scss */
   #visited .container-fluid img {
     width: 100%;
   }
@@ -367,7 +446,7 @@ desktop format
   /*===================================================================================
 footer
 ======================================================================================*/
-  /* line 93, ../sass/_desktop.scss */
+  /* line 92, ../sass/_desktop.scss */
   #footer {
     /*.nevenceto{
       font-family:"lovelo";
@@ -379,31 +458,31 @@ footer
       }
     }*/
   }
-  /* line 94, ../sass/_desktop.scss */
+  /* line 93, ../sass/_desktop.scss */
   #footer h2 {
     font-size: 30px;
   }
-  /* line 97, ../sass/_desktop.scss */
+  /* line 96, ../sass/_desktop.scss */
   #footer img {
     height: 50px;
   }
-  /* line 100, ../sass/_desktop.scss */
+  /* line 99, ../sass/_desktop.scss */
   #footer .musee {
     height: 60px;
   }
-  /* line 103, ../sass/_desktop.scss */
+  /* line 102, ../sass/_desktop.scss */
   #footer .mt_3 {
     margin-top: 10px;
   }
-  /* line 106, ../sass/_desktop.scss */
+  /* line 105, ../sass/_desktop.scss */
   #footer .border {
     border-top: 2px solid white;
   }
-  /* line 118, ../sass/_desktop.scss */
+  /* line 117, ../sass/_desktop.scss */
   #footer .left {
     text-align: right;
   }
-  /* line 121, ../sass/_desktop.scss */
+  /* line 120, ../sass/_desktop.scss */
   #footer .mecene {
     font-size: 10px;
     color: #4E5257;
