@@ -174,13 +174,13 @@ visited page
         font-family:'novecento';
         font-weight:bold;
       }
-    }
-    .list.hover {
-      @include transition-duration(0.2s);
-      cursor: pointer;
-      color: $a-hover-footer;
-    }
 
+    }
+  }
+  .list.hover {
+    @include transition-duration(0.2s);
+    cursor: pointer;
+    color: $a-hover-footer;
   }
 
   .icon-parcours{
@@ -247,6 +247,11 @@ visited page
     p{
       font-family:"loveloblack";
       text-transform: uppercase;
+    }
+    .icon{
+      position: absolute;
+      top: -100px;
+      left: 0;
     }
   }
 }
