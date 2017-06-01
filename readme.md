@@ -21,9 +21,9 @@ En voici une petite liste:
 * ZURBlW3
 * CSSl
 
-nous sommes libres de nous répartir le travail comme nous le souhaitons mais nous devrons reproduire les pages suivantes:
-1. Acceuill
-2. Visiterl
+nous sommes libres de nous répartir le travail comme nous le souhaitons mais nous devons reproduire les pages suivantes:
+1. Acceuil
+2. Visiter
 3. Agendal
 
 En plus des critères qualités habituels, nous devons respecter des critères particuliers surGitHub:
