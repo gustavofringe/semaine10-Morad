@@ -11,31 +11,31 @@ import font-face
   font-family: "pba";
   font-style: normal;
   font-weight: normal;
-  src: url("../../_fonts/pba.ttf") format("truetype");
+  src: url("../../fonts/pba.ttf") format("truetype");
 }
 @font-face {
   font-family: "novecento";
   font-style: normal;
   font-weight: normal;
-  src: url("../../_fonts/novecentowide-book-webfont.woff2") ;
+  src: url("../../fonts/novecentowide-book-webfont.woff2") ;
 }
 @font-face {
   font-family: "loveloblack";
   font-style: normal;
   font-weight: normal;
-  src: url("../../_fonts/Lovelo_Black.woff") format("woff");
+  src: url("../../fonts/Lovelo_Black.woff") format("woff");
 }
 @font-face {
   font-family: "open_sanslight";
   font-style: normal;
   font-weight: normal;
-  src: url("../../_fonts/opensans-light-webfont.woff2") ;
+  src: url("../../fonts/opensans-light-webfont.woff2") ;
 }
 @font-face {
   font-family: "atc_overlookregular";
   font-style: normal;
   font-weight: normal;
-  src: url('../../_fonts/atcoverlook-regular.woff') ;
+  src: url('../../fonts/atcoverlook-regular.woff') ;
 }
 
 $a-hover-footer: #D8383F;

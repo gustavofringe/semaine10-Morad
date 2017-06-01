@@ -9,31 +9,31 @@ import font-face
   font-family: "pba";
   font-style: normal;
   font-weight: normal;
-  src: url("../../_fonts/pba.ttf") format("truetype");
+  src: url("../../fonts/pba.ttf") format("truetype");
 }
 @font-face {
   font-family: "novecento";
   font-style: normal;
   font-weight: normal;
-  src: url("../../_fonts/novecentowide-book-webfont.woff2");
+  src: url("../../fonts/novecentowide-book-webfont.woff2");
 }
 @font-face {
   font-family: "loveloblack";
   font-style: normal;
   font-weight: normal;
-  src: url("../../_fonts/Lovelo_Black.woff") format("woff");
+  src: url("../../fonts/Lovelo_Black.woff") format("woff");
 }
 @font-face {
   font-family: "open_sanslight";
   font-style: normal;
   font-weight: normal;
-  src: url("../../_fonts/opensans-light-webfont.woff2");
+  src: url("../../fonts/opensans-light-webfont.woff2");
 }
 @font-face {
   font-family: "atc_overlookregular";
   font-style: normal;
   font-weight: normal;
-  src: url("../../_fonts/atcoverlook-regular.woff");
+  src: url("../../fonts/atcoverlook-regular.woff");
 }
 /*=============================================================================
 agenda
@@ -199,8 +199,8 @@ visited page
   font-family: 'novecento';
   font-weight: bold;
 }
-/* line 178, ../sass/screen.scss */
-#visited .black .list.hover {
+/* line 180, ../sass/screen.scss */
+#visited .list.hover {
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
@@ -275,20 +275,26 @@ visited page
   left: 150px;
 }
 /* line 243, ../sass/screen.scss */
-#visited .path:after {
+#visited .path:before {
   font-family: "pba";
   content: "\e907";
 }
 /* line 247, ../sass/screen.scss */
+#visited .path p {
+  font-family: "loveloblack";
+  text-transform: uppercase;
+}
+/* line 251, ../sass/screen.scss */
 #visited .path .icon {
   position: absolute;
-  top: 0;
+  top: -100px;
+  left: 0;
 }
 
 /*==============================================================================
 footer
 ================================================================================*/
-/* line 259, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 #footer {
   background-color: #1D1D1E;
   color: #ffffff;
@@ -297,58 +303,58 @@ footer
   width of svg clock and marker
   =========================================*/
 }
-/* line 263, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 #footer h2,
 #footer p,
 #footer a {
   text-transform: uppercase;
 }
-/* line 271, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 #footer .clock,
 #footer .marker {
   width: 20px;
   height: 20px;
 }
-/* line 276, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 #footer .home {
   height: 30px;
 }
-/* line 279, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 #footer .center {
   width: 230px;
   margin: 20px auto !important;
 }
-/* line 283, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 #footer .center-m {
   width: 260px;
   margin: 0 auto !important;
 }
-/* line 287, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 #footer .contact {
   width: 150px;
 }
-/* line 290, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 #footer h2 {
   font-family: "lovelo";
   font-size: 15px;
 }
-/* line 294, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 #footer p {
   font-family: 'novecento';
   font-size: 13px;
   line-height: 1.6em;
   margin: 0;
 }
-/* line 299, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 #footer p span {
   font-weight: bold;
 }
-/* line 303, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 #footer svg {
   height: 30px;
   width: 30px;
 }
-/* line 307, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 #footer a {
   margin-right: 5px;
   font-family: "novecento";
@@ -361,7 +367,7 @@ footer
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 315, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 #footer a:hover {
   color: #D8383F;
   fill: #D8383F !important;
