@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Agenda - Palais des beaux arts de lille</title>
+    <link rel="icon" href="../favicon.ico" />
+    <title>Visiter - Palais des beaux arts de lille</title>
     <meta name="description" content="Agenda du musée. Toutes les actualités. Exposition · Visite ...">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../scss/stylesheets/screen.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!--<link rel="stylesheet" href="../css/main.css">-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico in the root directory -->
@@ -25,9 +26,9 @@
 
     <!--  nav non mobile -->
     <ul class="no-mobile menu">
-        <li><a href="index.html">COLLECTIONS</a></li>
-        <li><a href="visiter.html">VISITER</a></li>
-        <li><a href="#">AGENDA</a></li>
+        <li><a href="../index.html">COLLECTIONS</a></li>
+        <li><a href="visited.html">VISITER</a></li>
+        <li><a href="agenda.html">AGENDA</a></li>
         <li><a href="#">INFOS</a></li>
     </ul>
 
@@ -79,27 +80,107 @@
 
 </header>
 <main id="visited">
-    <div class="">
-        <div class="d-flex justify-content-center">
-            <div class="img-visited">
-                <img src="../img/visited/visited1.jpg" alt="monsieur">
-                <p>vous êtes un<br><span>individuel</span></p>
-            </div>
-            <div class="img-visited">
-                <img src="../img/visited/visited2.jpg" alt="groupe">
-                <p>vous êtes un<br><span>groupe</span></p>
-            </div>
+    <div class="hidden-md-up black">
+        <div class="d-block">
+            <p class="list" id="p_f">vous êtes un<span> individuel</span></p>
+            <p class="list" id="p_g">vous êtes un<span> groupe</span></p>
+            <p class="list" id="p_h">vous êtes une<span> famille</span></p>
+            <p class="list" id="p_i">vous êtes un<span> étudiant</span></p>
+            <p class="list" id="p_j">vous êtes un<span> enseignant</span></p>
+        </div>
+    </div>
+    <div class="d-block">
+        <div class="d-flex justify-content-center hidden-md-down">
+                <div class="img-visited d-block">
+                    <img src="../img/visited/visited1.jpg" alt="monsieur">
+                    <p class="list" id="p_a">vous êtes un<br><span>individuel</span></p>
+                </div>
+                <div class="img-visited d-block">
+                    <img src="../img/visited/visited2.jpg" alt="groupe">
+                    <p class="list" id="p_b">vous êtes un<br><span>groupe</span></p>
+                </div>
             <div class="img-visited">
                 <img src="../img/visited/visited3.jpg" alt="famille">
-                <p>vous êtes une<br><span>famille</span></p>
+                <p class="list" id="p_c">vous êtes une<br><span>famille</span></p>
             </div>
             <div class="img-visited">
-                <img src="../img/visited/visited4.jpg" alt="etudiant">
-                <p>vous êtes un<br><span>étudiant</span></p>
+                <img  src="../img/visited/visited4.jpg" alt="etudiant">
+                <p class="list" id="p_d">vous êtes un<br><span>étudiant</span></p>
             </div>
             <div class="img-visited">
                 <img src="../img/visited/visited5.jpg" alt="enseignant">
-                <p>vous êtes un<br><span>enseignant</span></p>
+                <p class="list" id="p_e">vous êtes un<br><span>enseignant</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="parcours">
+
+
+        <div class="icon-parcours icon"></div>
+        <p class="visite">
+            parcours de visite
+        </p>
+        <img src="../img/agenda/dessin-1.svg" alt="fleche">
+    </div>
+    <div class="container-fluid second-level">
+        <div class="row">
+            <div class="col-xl-3">
+                <img src="../img/visited/visited6.jpg" alt="art">
+                <div class="path">
+                    <p>legrand bleu</p>
+                    <p><span class="icon-clock icon"></span><span>45 mn </span>de parcours</p>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <img src="../img/visited/visited7.jpg" alt="art">
+                <div class="path">
+                    <p>love, etc.</p>
+                    <p><span class="icon-clock icon"></span><span>45 mn </span>de parcours</p>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <img src="../img/visited/visited8.jpg" alt="art">
+                <div class="path">
+                    <p>à table</p>
+                    <p><span class="icon-clock icon"></span><span>45 mn </span>de parcours</p>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <img src="../img/visited/visited9.jpg" alt="art">
+                <div class="path">
+                    <p>anges et démons</p>
+                    <p><span class="icon-clock icon"></span><span>45 mn </span>de parcours</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3">
+                <img src="../img/visited/visited10.jpg" alt="art">
+                <div class="path">
+                    <p>histoire de bêtes</p>
+                    <p><span class="icon-clock icon"></span><span>45 mn </span>de parcours</p>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <img src="../img/visited/visited11.jpg" alt="art">
+                <div class="path">
+                    <p>des chiffres et des lettres</p>
+                    <p><span class="icon-clock icon"></span><span>45 mn </span>de parcours</p>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <img src="../img/visited/visited12.jpg" alt="art">
+                <div class="path">
+                    <p>blondes et brunes</p>
+                    <p><span class="icon-clock icon"></span><span>45 mn </span>de parcours</p>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <img src="../img/visited/visited13.jpg" alt="art">
+                <div class="path">
+                    <p>mini maxi</p>
+                    <p><span class="icon-clock icon"></span><span>45 mn </span>de parcours</p>
+                </div>
             </div>
         </div>
     </div>
@@ -152,7 +233,7 @@
                         x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
                         xml:space="preserve">
                         <g>
-                            <path d="M464,64H48C21.6,64,0,85.6,0,112v288c0,26.4,21.6,48,48,48h416c26.4,0,48-21.6,48-48V112C512,85.6,490.4,64,464,64z M48,96
+                            <path class="fr" d="M464,64H48C21.6,64,0,85.6,0,112v288c0,26.4,21.6,48,48,48h416c26.4,0,48-21.6,48-48V112C512,85.6,490.4,64,464,64z M48,96
                                         h416c8.674,0,16,7.327,16,16v48H32v-48C32,103.327,39.327,96,48,96z M464,416H48c-8.673,0-16-7.327-16-16V256h448v144
                                         C480,408.673,472.674,416,464,416z M64,320h32v64H64V320z M128,320h32v64h-32V320z M192,320h32v64h-32V320z"
                             />
@@ -607,6 +688,7 @@
     window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')
 </script>
 <script src="../js/plugins.js"></script>
+<script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/main.js"></script>
 
 <script src="../js/vendor/modernizr-2.8.3.min.js"></script>

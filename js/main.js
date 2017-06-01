@@ -13,4 +13,16 @@ window.onclick = function(event) {
       }
     }
   }
-} 
+}
+$(document).ready(function () {
+    $('.list').hover(function () {
+        var x = this.id;
+        var links = '#p_' + x[2];
+        $(links).addClass('hover');
+
+    }, function () {
+        var x = this.id;
+        var links = '#p_' + x[2];
+        $(links).removeClass('hover');
+    });
+});

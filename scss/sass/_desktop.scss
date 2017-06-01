@@ -1,38 +1,44 @@
 /*================================================================================================
 desktop format
 ===================================================================================================*/
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
   /*=============================================================================
   agenda
   =================================================================================*/
-#agenda{
-  .bordered{
-    width: 160px;
-    float: right;
-  }
-  .top{
-    position: relative;
-    .angle{
-      position: absolute;
-      padding: 0;
-      margin: 0;
-      top: -17px;
-      right: -20px;
-      width: 70px;
-      height: 70px;
+  #agenda {
+    .bordered {
+      width: 160px;
+      float: right;
+    }
+
+    .top {
+      position: relative;
+      .angle {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top: -17px;
+        right: -20px;
+        width: 70px;
+        height: 70px;
+      }
     }
   }
-}
-  #visited{
-    .img-visited{
+  /*==========================================================================================
+  visited page
+  ===========================================================================================*/
+  #visited {
+
+    .img-visited {
       position: relative;
-      img{
+      img {
         width: 100%;
       }
-      p{
+      p {
         @include transition-duration(0.3s);
         text-transform: uppercase;
-        line-height:20px;
+        font-family: "atc_overlookregular";
+        line-height: 20px;
         font-size: 23px;
         width: 290px;
         height: 140px;
@@ -42,36 +48,62 @@ desktop format
         bottom: 50px;
         right: 20px;
         padding: 50px 0 0 30px;
-        span{
+        span {
           margin: 0;
           padding: 0;
           font-weight: bold;
         }
       }
     }
-    &:hover p{
-      color: $a-hover-footer;
-      cursor: pointer;
+    .second-level{
+      img{
+        height: 715px !important;
+      }
+    }
+
+
+    .icon-parcours{
+      position: absolute;
+      top: 20px;
+      left: 36%;
+      width: 70px;
+      height: 70px;
+      &:before{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        content: '\e922';
+        font-size: 50px;
+      }
+    }
+    .container-fluid {
+      .col-xl-3 {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        width: 100%;
+      }
     }
   }
   /*===================================================================================
 footer
 ======================================================================================*/
-  #footer{
-    h2{
+  #footer {
+    h2 {
       font-size: 30px;
     }
-    img{
+    img {
       height: 50px;
     }
-    .musee{
+    .musee {
       height: 60px;
     }
-    .mt_3{
-      margin-top:10px;
+    .mt_3 {
+      margin-top: 10px;
     }
-    .border{
-      border-top:2px solid white;
+    .border {
+      border-top: 2px solid white;
     }
     /*.nevenceto{
       font-family:"lovelo";
@@ -82,10 +114,10 @@ footer
         fill: red;
       }
     }*/
-    .left{
+    .left {
       text-align: right;
     }
-    .mecene{
+    .mecene {
       font-size: 10px;
       color: #4E5257;
     }

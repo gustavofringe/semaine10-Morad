@@ -2,26 +2,45 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass";
 
 /*=====================================================================
 import font-face
 =====================================================================*/
-
 @font-face {
-  font-family: "lovelo";
-  src: url('../../_fonts/Lovelo_Black.otf');
+  font-family: "pba";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../_fonts/pba.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "novecento";
-  src: url("../../_fonts/Novecentosanswide-Book.otf");
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../_fonts/novecentowide-book-webfont.woff2") ;
+}
+@font-face {
+  font-family: "loveloblack";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../_fonts/Lovelo_Black.woff") format("woff");
+}
+@font-face {
+  font-family: "open_sanslight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../_fonts/opensans-light-webfont.woff2") ;
+}
+@font-face {
+  font-family: "atc_overlookregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../_fonts/atcoverlook-regular.woff') ;
 }
 
 $a-hover-footer: #D8383F;
 $footer: #1D1D1E;
-$a-footer:#ffffff;
+$a-footer: #ffffff;
 
 /*=============================================================================
 agenda
@@ -29,9 +48,12 @@ agenda
 
 #agenda {
   padding-top: 30px;
-  h1{
+  .nevenceto{
+    font-family: "open_sanslight";
+  }
+  h1 {
     font-size: 13px;
-    font-family: "lovelo";
+    font-family: "loveloblack";
     width: 120px;
     margin: 0 auto;
   }
@@ -40,41 +62,41 @@ agenda
     width: 50px;
     height: 50px;
   }
-    .point{
-      width: 4%;
-      height: 25px;
-      margin: 10px auto;
-    }
+  .point {
+    width: 4%;
+    height: 25px;
+    margin: 10px auto;
+  }
 
-  svg{
-    vertical-align:middle;
+  svg {
+    vertical-align: middle;
     height: 30px;
     width: 30px;
-    fill:none;
-    stroke:#000000;
-    stroke-width:14.06499958;
-    stroke-linecap:butt;
-    stroke-linejoin:miter;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-opacity:1;
-    &:hover{
+    fill: none;
+    stroke: #000000;
+    stroke-width: 14.06499958;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
+    &:hover {
       stroke: $a-hover-footer;
     }
   }
-  .border{
+  .border {
     margin: 30px auto;
     text-align: center;
     font-size: 15px;
-    font-family: "lovelo";
+    font-family: "loveloblack";
     border: 3px solid black;
     height: 35px;
     width: 70%;
   }
-  .visu{
+  .visu {
     margin: 0;
     padding: 0;
-    img{
+    img {
       margin: 0;
       padding: 0;
       width: 100%;
@@ -82,43 +104,154 @@ agenda
     }
     background-size: cover;
     @include transition-duration(0.2s);
-    &:hover{
-      @include filter( opacity(.5) drop-shadow(0 0 0 red));
+    &:hover {
+      @include filter(opacity(.5) drop-shadow(0 0 0 red));
       @include transition-duration(0.2s);
     }
   }
-  .top{
+  .pink {
+    img {
+      fill: #D3336C;
+    }
+    border-top: 2px solid #D3336C;
+  }
+  .purple {
+    border-top: 2px solid #935297;
+  }
+  .top {
     padding-top: 30px;
-    border-top: 2px solid black;
-    &:after{
+    &:after {
       content: '';
       background: url('../../img/agenda/dessin-2.svg');
     }
-    .lovelo-s{
-      font-family:"lovelo";
+    .lovelo-s {
+      font-family: "loveloblack";
       font-size: 12px;
       text-transform: lowercase !important;
     }
-    .lovelo{
-      font-family:"lovelo";
+    .lovelo {
+      font-family: "loveloblack";
       margin: 0;
-      span{
-        font-family:"novecento";
+      span {
+        font-family: "novecento";
         color: $a-hover-footer;
       }
     }
-    .nevenceto{
-      font-family:"novecento";
+    .nevenceto {
+      font-family: "open_sanslight";
     }
   }
-  .bordered{
+  .bordered {
     height: 55px !important;
-    padding:10px;
+    padding: 10px;
     width: 50%;
     border: 3px solid black;
-    margin-bottom:35px;
-    img{
+    margin-bottom: 35px;
+    img {
       height: 40px;
+    }
+  }
+}
+/*====================================================================================================
+visited page
+========================================================================================================*/
+
+#visited {
+  .black{
+    padding: 0;
+    margin: 0;
+    background-color: #1D1D1E;
+    .d-block{
+      margin: 0 auto;
+      width: 80%;
+    }
+    p{
+      background-color: white;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      span{
+        font-family:'novecento';
+        font-weight:bold;
+      }
+
+    }
+  }
+  .list.hover {
+    @include transition-duration(0.2s);
+    cursor: pointer;
+    color: $a-hover-footer;
+  }
+
+  .icon-parcours{
+    position: absolute;
+    top: 20px;
+    left: 45%;
+    width: 50px;
+    height: 50px;
+    &:before{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      content: '\e922';
+      font-size: 30px;
+    }
+  }
+  .visite{
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    font-family:"atc_overlookregular";
+  }
+  .parcours {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: $footer;
+    p {
+      padding-top: 80px;
+      width: 270px;
+      text-transform: uppercase;
+      margin: 0 auto;
+      display: block;
+      font-size: 25px;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .second-level{
+    margin: 0;
+    padding: 0;
+    img{
+      width: 100%;
+      height: 430px !important;
+    }
+  }
+  .path{
+    background-color: #fff;
+    height: 130px;
+    width: 50%;
+    padding: 26.5px 26.5px 0 26.5px;
+
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    &:before{
+      font-family:"pba";
+      content: "\e907";
+    }
+    p{
+      font-family:"loveloblack";
+      text-transform: uppercase;
+    }
+    .icon{
+      position: absolute;
+      top: -100px;
+      left: 0;
     }
   }
 }
@@ -186,7 +319,7 @@ footer
     @include transition-duration(0.3s);
     &:hover {
       color: $a-hover-footer;
-      fill: $a-hover-footer;
+      fill: $a-hover-footer !important;
     }
   }
 }
